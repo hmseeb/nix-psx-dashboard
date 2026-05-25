@@ -32,23 +32,11 @@ function fallbackData(error?: string): DashboardData {
 }
 
 export async function getDashboardData(): Promise<DashboardData> {
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) return fallbackData('GITHUB_TOKEN missing in Vercel runtime');
-
-  const url = `https://api.github.com/repos/${OWNER_REPO}/contents/${LIVE_PATH}?ref=main`;
+  const url = `https://raw.githubusercontent.com/${OWNER_REPO}/main/${LIVE_PATH}`;
   try {
-    const res = await fetch(url, {
-      cache: 'no-store',
-      headers: {
-        Accept: 'application/vnd.github+json',
-        Authorization: `Bearer ${token}`,
-        'X-GitHub-Api-Version': '2022-11-28',
-      },
-    });
+    const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return fallbackData(`GitHub live data fetch failed: ${res.status}`);
-    const meta = await res.json();
-    const content = Buffer.from(meta.content || '', 'base64').toString('utf8');
-    const live = JSON.parse(content);
+    const live = await res.json();
     return {
       rules: live.rules || fallbackRules,
       backtest: live.backtest || fallbackBacktest,
