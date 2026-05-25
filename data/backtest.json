@@ -1,0 +1,299 @@
+{
+  "allocation_method": "equal_weight",
+  "backtest_mode": "limited_current_scores_no_point_in_time_history",
+  "benchmark_return": {
+    "KMI30": null,
+    "KSE100": null
+  },
+  "data_quality": {
+    "backtest_mode": "limited_current_scores_no_point_in_time_history",
+    "insufficient_months": 0,
+    "limited": true,
+    "missing_or_insufficient_benchmark_history": [
+      "KMI30",
+      "KSE100"
+    ],
+    "missing_or_insufficient_price_history": [
+      "FFC",
+      "HUBC",
+      "OGDC"
+    ],
+    "notes": "Uses current rules output for selection; historical point-in-time scoring is not yet available.",
+    "point_in_time_scoring": false
+  },
+  "end": "2026-05-25",
+  "excess_return": {
+    "KMI30": null,
+    "KSE100": null
+  },
+  "generated_at_utc": "2026-05-25T18:28:47.929588Z",
+  "max_drawdown": 0.0,
+  "monthly_returns": [
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-01-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-01",
+      "start": "2025-01-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-02-28",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-02",
+      "start": "2025-02-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-03-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-03",
+      "start": "2025-03-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-04-30",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-04",
+      "start": "2025-04-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-05-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-05",
+      "start": "2025-05-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-06-30",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-06",
+      "start": "2025-06-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-07-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-07",
+      "start": "2025-07-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-08-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-08",
+      "start": "2025-08-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-09-30",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-09",
+      "start": "2025-09-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-10-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-10",
+      "start": "2025-10-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-11-30",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-11",
+      "start": "2025-11-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2025-12-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2025-12",
+      "start": "2025-12-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2026-01-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2026-01",
+      "start": "2026-01-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2026-02-28",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2026-02",
+      "start": "2026-02-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2026-03-31",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2026-03",
+      "start": "2026-03-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2026-04-30",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2026-04",
+      "start": "2026-04-01",
+      "strategy_return_pct": 0.0
+    },
+    {
+      "benchmark_return_pct": {
+        "KMI30": null,
+        "KSE100": null
+      },
+      "end": "2026-05-25",
+      "holdings": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "month": "2026-05",
+      "start": "2026-05-01",
+      "strategy_return_pct": 0.0
+    }
+  ],
+  "number_of_trades": 17,
+  "rebalance_frequency": "monthly",
+  "start": "2025-01-01",
+  "strategy_rules_version": 1,
+  "total_return": 0.0,
+  "universe": [
+    "FFC",
+    "HUBC",
+    "OGDC"
+  ],
+  "win_rate": 0.0
+}

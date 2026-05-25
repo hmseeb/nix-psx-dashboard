@@ -1,0 +1,756 @@
+{
+  "generated_at": "2026-05-25T18:46:32.656200+00:00",
+  "generated_at_pkt": "2026-05-25 23:46 PKT",
+  "period": {
+    "since_utc": "2026-05-18T18:46:32.656200+00:00",
+    "days": 7
+  },
+  "recommendations_last_7d": {
+    "count": 6,
+    "items": [
+      {
+        "recommendation_id": "ab8bf34da1ef883dafc1",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "ENGROH",
+        "sector": null,
+        "recommendation_type": "holding_risk",
+        "action": "safe_hold",
+        "score": 15,
+        "score_type": "risk",
+        "price_pkr": 267.67,
+        "thesis": "holding risk action safe_hold from deterministic risk score",
+        "trigger": null,
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": true,
+          "shares": 385.0,
+          "avg_cost_pkr": 267.67,
+          "portfolio_weight_pct": 100.0
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "price_risk": 0,
+          "drawdown_risk": 10,
+          "sell_pressure": 0,
+          "sector_macro_risk": 0,
+          "fundamental_news_risk": 0,
+          "concentration_risk": 5
+        }
+      },
+      {
+        "recommendation_id": "5a112a54393cf2bcca65",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "FFC",
+        "sector": "fertilizer",
+        "recommendation_type": "opportunity",
+        "action": "buy",
+        "score": 81,
+        "score_type": "opportunity",
+        "price_pkr": 541.73,
+        "thesis": "defensive dividend profile",
+        "trigger": "rotation to defensive + acceptable valuation",
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 15,
+          "volume_accumulation": 10,
+          "sector_rotation": 15,
+          "quality_fundamentals": 20,
+          "valuation": 15,
+          "catalyst_insider": 6
+        }
+      },
+      {
+        "recommendation_id": "cb1bee55e40ad33d58aa",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "HUBC",
+        "sector": "power",
+        "recommendation_type": "opportunity",
+        "action": "buy",
+        "score": 81,
+        "score_type": "opportunity",
+        "price_pkr": 219.5,
+        "thesis": "defensive utility exposure",
+        "trigger": "risk-off rotation and stable cashflow outlook",
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 20,
+          "volume_accumulation": 10,
+          "sector_rotation": 10,
+          "quality_fundamentals": 20,
+          "valuation": 15,
+          "catalyst_insider": 6
+        }
+      },
+      {
+        "recommendation_id": "e6a2d74279d2afac085b",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "OGDC",
+        "sector": "e&p",
+        "recommendation_type": "opportunity",
+        "action": "buy",
+        "score": 78,
+        "score_type": "opportunity",
+        "price_pkr": 330.05,
+        "thesis": "large-cap energy beta",
+        "trigger": "sector inflow confirmation and improving momentum",
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 25,
+          "volume_accumulation": 10,
+          "sector_rotation": 15,
+          "quality_fundamentals": 20,
+          "valuation": 5,
+          "catalyst_insider": 3
+        }
+      },
+      {
+        "recommendation_id": "634a08649472170483cb",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "MARI",
+        "sector": "e&p",
+        "recommendation_type": "opportunity",
+        "action": "watch_small_add",
+        "score": 73,
+        "score_type": "opportunity",
+        "price_pkr": 658.52,
+        "thesis": "energy cashflow + defensive macro hedge",
+        "trigger": "oil-supported strength + no breakdown in broader market",
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 10,
+          "volume_accumulation": 10,
+          "sector_rotation": 15,
+          "quality_fundamentals": 20,
+          "valuation": 15,
+          "catalyst_insider": 3
+        }
+      },
+      {
+        "recommendation_id": "c70e59984979b7be9442",
+        "generated_at": "2026-05-25T16:37:48.787021+00:00",
+        "generated_at_pkt": "2026-05-25 21:37 PKT",
+        "source_job": "manual_bootstrap",
+        "ticker": "SYS",
+        "sector": "tech",
+        "recommendation_type": "opportunity",
+        "action": "watch_small_add",
+        "score": 70,
+        "score_type": "opportunity",
+        "price_pkr": 151.78,
+        "thesis": "earnings growth profile",
+        "trigger": "pullback entry with trend intact",
+        "stop_pkr": null,
+        "target_pkr": null,
+        "market_regime_score": 34,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 20,
+          "volume_accumulation": 10,
+          "sector_rotation": 15,
+          "quality_fundamentals": 10,
+          "valuation": 15,
+          "catalyst_insider": 0
+        }
+      }
+    ]
+  },
+  "executions_last_7d": {
+    "count": 0,
+    "items": []
+  },
+  "matured_outcomes": {
+    "count": 0,
+    "best_calls": [],
+    "worst_calls": []
+  },
+  "factor_performance": {
+    "worked": {},
+    "failed": {}
+  },
+  "sector_performance": {},
+  "latest_rules_data_quality": {
+    "history_coverage_pct": 0.0,
+    "tickers_with_200d_history": 0,
+    "tickers_total": 11,
+    "score_confidence": "low"
+  },
+  "latest_market_regime": {
+    "score": 34,
+    "regime": "neutral",
+    "reasons": [
+      "KSE100 strong positive",
+      "KMI30 strong positive"
+    ],
+    "indices": {
+      "KSE100": {
+        "value": 171725.29,
+        "change": 3881.05,
+        "pct": 2.31
+      },
+      "KSE100PR": {
+        "value": 52376.16,
+        "change": 1183.71,
+        "pct": 2.31
+      },
+      "ALLSHR": {
+        "value": 103214.48,
+        "change": 2024.02,
+        "pct": 2.0
+      },
+      "KSE30": {
+        "value": 51517.13,
+        "change": 1209.13,
+        "pct": 2.4
+      },
+      "KMI30": {
+        "value": 246565.7,
+        "change": 5524.54,
+        "pct": 2.29
+      },
+      "BKTI": {
+        "value": 47299.7,
+        "change": 1394.54,
+        "pct": 3.04
+      },
+      "OGTI": {
+        "value": 36341.36,
+        "change": 783.44,
+        "pct": 2.2
+      },
+      "KMIALLSHR": {
+        "value": 67042.77,
+        "change": 1273.86,
+        "pct": 1.94
+      },
+      "PSXDIV20": {
+        "value": 78920.18,
+        "change": 1506.88,
+        "pct": 1.95
+      },
+      "UPP9": {
+        "value": 60443.5,
+        "change": 1399.42,
+        "pct": 2.37
+      },
+      "NITPGI": {
+        "value": 45818.14,
+        "change": 1104.2,
+        "pct": 2.47
+      },
+      "NBPPGI": {
+        "value": 49922.37,
+        "change": 1220.12,
+        "pct": 2.51
+      },
+      "MZNPI": {
+        "value": 30276.3,
+        "change": 752.69,
+        "pct": 2.55
+      },
+      "JSMFI": {
+        "value": 41362.34,
+        "change": 775.32,
+        "pct": 1.91
+      },
+      "ACI": {
+        "value": 22396.99,
+        "change": 663.37,
+        "pct": 3.05
+      },
+      "JSGBKTI": {
+        "value": 72433.77,
+        "change": 2250.36,
+        "pct": 3.21
+      },
+      "HBLTTI": {
+        "value": 18413.74,
+        "change": 17.9,
+        "pct": 0.1
+      },
+      "MII30": {
+        "value": 22305.99,
+        "change": 495.47,
+        "pct": 2.27
+      }
+    }
+  },
+  "latest_backtest": {
+    "allocation_method": "equal_weight",
+    "backtest_mode": "limited_current_scores_no_point_in_time_history",
+    "benchmark_return": {
+      "KMI30": null,
+      "KSE100": null
+    },
+    "data_quality": {
+      "backtest_mode": "limited_current_scores_no_point_in_time_history",
+      "insufficient_months": 0,
+      "limited": true,
+      "missing_or_insufficient_benchmark_history": [
+        "KMI30",
+        "KSE100"
+      ],
+      "missing_or_insufficient_price_history": [
+        "FFC",
+        "HUBC",
+        "OGDC"
+      ],
+      "notes": "Uses current rules output for selection; historical point-in-time scoring is not yet available.",
+      "point_in_time_scoring": false
+    },
+    "end": "2026-05-25",
+    "excess_return": {
+      "KMI30": null,
+      "KSE100": null
+    },
+    "generated_at_utc": "2026-05-25T18:28:47.929588Z",
+    "max_drawdown": 0.0,
+    "monthly_returns": [
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-01-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-01",
+        "start": "2025-01-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-02-28",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-02",
+        "start": "2025-02-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-03-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-03",
+        "start": "2025-03-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-04-30",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-04",
+        "start": "2025-04-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-05-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-05",
+        "start": "2025-05-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-06-30",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-06",
+        "start": "2025-06-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-07-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-07",
+        "start": "2025-07-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-08-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-08",
+        "start": "2025-08-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-09-30",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-09",
+        "start": "2025-09-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-10-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-10",
+        "start": "2025-10-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-11-30",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-11",
+        "start": "2025-11-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2025-12-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2025-12",
+        "start": "2025-12-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2026-01-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2026-01",
+        "start": "2026-01-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2026-02-28",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2026-02",
+        "start": "2026-02-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2026-03-31",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2026-03",
+        "start": "2026-03-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2026-04-30",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2026-04",
+        "start": "2026-04-01",
+        "strategy_return_pct": 0.0
+      },
+      {
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "end": "2026-05-25",
+        "holdings": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "month": "2026-05",
+        "start": "2026-05-01",
+        "strategy_return_pct": 0.0
+      }
+    ],
+    "number_of_trades": 17,
+    "rebalance_frequency": "monthly",
+    "start": "2025-01-01",
+    "strategy_rules_version": 1,
+    "total_return": 0.0,
+    "universe": [
+      "FFC",
+      "HUBC",
+      "OGDC"
+    ],
+    "win_rate": 0.0
+  },
+  "performance_summary": {
+    "available": true,
+    "summary": {
+      "avg_excess_return_vs_KMI30_count": 0,
+      "avg_excess_return_vs_KMI30_pct": null,
+      "avg_return_by_action": [],
+      "backtest": {
+        "available": true,
+        "backtest_mode": "limited_current_scores_no_point_in_time_history",
+        "benchmark_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "data_quality": {
+          "backtest_mode": "limited_current_scores_no_point_in_time_history",
+          "insufficient_months": 0,
+          "limited": true,
+          "missing_or_insufficient_benchmark_history": [
+            "KMI30",
+            "KSE100"
+          ],
+          "missing_or_insufficient_price_history": [
+            "FFC",
+            "HUBC",
+            "OGDC"
+          ],
+          "notes": "Uses current rules output for selection; historical point-in-time scoring is not yet available.",
+          "point_in_time_scoring": false
+        },
+        "end": "2026-05-25",
+        "excess_return_pct": {
+          "KMI30": null,
+          "KSE100": null
+        },
+        "generated_at_utc": "2026-05-25T18:28:47.929588Z",
+        "max_drawdown_pct": 0.0,
+        "number_of_trades": 17,
+        "start": "2025-01-01",
+        "total_return_pct": 0.0,
+        "universe": [
+          "FFC",
+          "HUBC",
+          "OGDC"
+        ],
+        "win_rate_pct": 0.0
+      },
+      "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
+      "best_sectors": [],
+      "best_tickers": [],
+      "generated_at_utc": "2026-05-25T18:46:32.691905Z",
+      "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
+      "recommendation_count": 6,
+      "recommendation_count_by_action": {
+        "buy": 3,
+        "safe_hold": 1,
+        "watch_small_add": 2
+      },
+      "recommendation_count_by_type": {
+        "holding_risk": 1,
+        "opportunity": 5
+      },
+      "signals_that_failed": [],
+      "signals_that_worked": [],
+      "window_performance": {
+        "d30": {
+          "avg_return_pct": null,
+          "evaluated": 0,
+          "losses": 0,
+          "neutral": 0,
+          "note": "pending/immature outcomes excluded from win-rate denominator",
+          "pending": 6,
+          "win_rate_pct": null,
+          "wins": 0
+        },
+        "d7": {
+          "avg_return_pct": null,
+          "evaluated": 0,
+          "losses": 0,
+          "neutral": 0,
+          "note": "pending/immature outcomes excluded from win-rate denominator",
+          "pending": 6,
+          "win_rate_pct": null,
+          "wins": 0
+        },
+        "d90": {
+          "avg_return_pct": null,
+          "evaluated": 0,
+          "losses": 0,
+          "neutral": 0,
+          "note": "pending/immature outcomes excluded from win-rate denominator",
+          "pending": 6,
+          "win_rate_pct": null,
+          "wins": 0
+        }
+      },
+      "worst_sectors": [],
+      "worst_tickers": []
+    }
+  },
+  "suggested_weight_changes": [
+    {
+      "proposal": "do not change factor weights yet",
+      "reason": "fewer than 10 matured outcome windows; sample too small",
+      "needs_human_review": true
+    }
+  ],
+  "guardrails": [
+    "weekly review is diagnostic, not a live trade recommendation",
+    "rule weight changes are proposals only and require human review",
+    "do not auto-patch scoring weights from this report"
+  ]
+}
