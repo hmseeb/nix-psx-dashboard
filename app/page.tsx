@@ -18,8 +18,8 @@ function Metric({ label, value, sub, icon }: { label: string; value: React.React
   return <article className="metric"><div className="metricLabel">{label}</div><div className="metricValue">{value}</div>{sub && <div className="metricSub">{sub}</div>}</article>;
 }
 
-export default function Page() {
-  const { rules, backtest, weekly, performanceMd } = getDashboardData();
+export default async function Page() {
+  const { rules, backtest, weekly, performanceMd, dataSource, publishedAt, liveError } = await getDashboardData();
   const market = rules.market_regime || {};
   const dq = rules.data_quality || {};
   const portfolio = rules.portfolio || {};
@@ -32,7 +32,7 @@ export default function Page() {
   return <main className="shell">
     <nav className="nav">
       <div className="brand"><div className="logo">N</div><div>NIX PSX COMMAND</div></div>
-      <div className="navMeta">snapshot {generated}</div>
+      <div className="navMeta">snapshot {generated} · {dataSource}</div>
     </nav>
 
     <section className="hero">
@@ -44,6 +44,7 @@ export default function Page() {
           <Pill value={market.regime}><Activity size={14}/> market {market.score}/100 · {market.regime}</Pill>
           <Pill value={dq.score_confidence}><ShieldCheck size={14}/> confidence {dq.score_confidence}</Pill>
           <Pill value="low"><Database size={14}/> history {dq.history_coverage_pct}%</Pill>
+          <Pill value={dataSource}><Database size={14}/> {dataSource}{publishedAt ? ` · ${publishedAt}` : ""}</Pill>
         </div>
       </div>
       <div className="panel command">
@@ -93,6 +94,6 @@ export default function Page() {
       <div className="panel"><div className="panelHead"><h2>data quality caveats</h2><span className="caption">truth layer</span></div><div className="monoBox">{JSON.stringify(backtest.data_quality || {}, null, 2)}</div></div>
     </section>
 
-    <footer className="footer">Next.js + Vercel. Deterministic data snapshot, no secrets, no tables.</footer>
+    <footer className="footer">Next.js + Vercel. Data source: {dataSource}. {liveError ? `Live data warning: ${liveError}` : "Morning cron publishes fresh JSON without redeploy."}</footer>
   </main>;
 }
