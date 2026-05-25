@@ -35,7 +35,7 @@ function fallbackData(error?: string): DashboardData {
 export async function getDashboardData(): Promise<DashboardData> {
   const url = `https://raw.githubusercontent.com/${OWNER_REPO}/${LIVE_REF}/${LIVE_PATH}?t=${Date.now()}`;
   try {
-    const res = await fetch(url, { cache: 'no-store' });
+    const res = await fetch(url, { cache: 'no-store', next: { revalidate: 0 } });
     if (!res.ok) return fallbackData(`GitHub live data fetch failed: ${res.status}`);
     const live = await res.json();
     return {
