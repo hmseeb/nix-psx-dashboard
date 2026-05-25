@@ -299,8 +299,8 @@
     "win_rate": 0.0
   },
   "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-05-25T20:55:36.051321Z\n- Recommendations tracked: 9\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 1\n- opportunity: 8\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 9; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 9; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 9; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
-  "published_at": "2026-05-25T21:00:34.333571+00:00",
-  "published_at_pkt": "2026-05-25T21:00:34.333571+00:00",
+  "published_at": "2026-05-25T21:04:18.432296+00:00",
+  "published_at_pkt": "2026-05-25T21:04:18.432296+00:00",
   "rules": {
     "audit_notes": [
       "deterministic rules-engine output; llm may explain but not change scores",
@@ -985,37 +985,7 @@
     "rules_name": "nix-psx-rules-engine",
     "rules_version": 1
   },
-  "run_status": [
-    {
-      "cmd": [
-        "/data/.hermes/scripts/psx-rules-engine.py"
-      ],
-      "error": "BlockingIOError(11, 'Resource temporarily unavailable')",
-      "exit_code": -1
-    },
-    {
-      "cmd": [
-        "/data/.hermes/scripts/psx-backtest.py"
-      ],
-      "error": "BlockingIOError(11, 'Resource temporarily unavailable')",
-      "exit_code": -1
-    },
-    {
-      "cmd": [
-        "/data/.hermes/scripts/psx-performance-report.py",
-        "markdown"
-      ],
-      "error": "BlockingIOError(11, 'Resource temporarily unavailable')",
-      "exit_code": -1
-    },
-    {
-      "cmd": [
-        "/data/.hermes/scripts/psx-weekly-review.py"
-      ],
-      "error": "BlockingIOError(11, 'Resource temporarily unavailable')",
-      "exit_code": -1
-    }
-  ],
+  "run_status": [],
   "schema_version": 1,
   "source": "psx-publish-dashboard.py",
   "weekly": {
