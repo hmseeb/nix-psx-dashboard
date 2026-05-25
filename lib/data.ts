@@ -17,6 +17,7 @@ export type DashboardData = {
 
 const OWNER_REPO = process.env.PSX_DASHBOARD_REPO || 'hmseeb/nix-psx-dashboard';
 const LIVE_PATH = process.env.PSX_DASHBOARD_DATA_PATH || 'data/live-dashboard.json';
+const LIVE_REF = process.env.PSX_DASHBOARD_REF || 'main';
 
 function fallbackData(error?: string): DashboardData {
   return {
@@ -32,7 +33,7 @@ function fallbackData(error?: string): DashboardData {
 }
 
 export async function getDashboardData(): Promise<DashboardData> {
-  const url = `https://github.com/${OWNER_REPO}/raw/main/${LIVE_PATH}`;
+  const url = `https://raw.githubusercontent.com/${OWNER_REPO}/${LIVE_REF}/${LIVE_PATH}?t=${Date.now()}`;
   try {
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return fallbackData(`GitHub live data fetch failed: ${res.status}`);
