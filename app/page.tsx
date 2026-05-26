@@ -14,7 +14,7 @@ function Pill({ children, value }: { children: React.ReactNode; value?: any }) {
 }
 
 function Metric({ label, value, sub }: { label: string; value: React.ReactNode; sub?: React.ReactNode }) {
-  return <article className="metric"><div className="metricLabel">{label}</div><div className="metricValue">{value}</div>{sub && <div className="metricSub">{sub}</div>}</article>;
+  return <article className="metricTile"><div className="metricLabel">{label}</div><div className="metricValue">{value}</div>{sub && <div className="metricSub">{sub}</div>}</article>;
 }
 
 function Section({ title, caption, icon, children, className = '' }: { title: string; caption?: string; icon?: React.ReactNode; children: React.ReactNode; className?: string }) {
@@ -75,7 +75,7 @@ export default async function Page() {
       </div>
     </section>
 
-    <section className="metricGrid topMetrics">
+    <section className="metricGrid topMetrics" aria-label="system snapshot metrics">
       <Metric label="recommendations 7d" value={weekly?.recommendations_last_7d?.count ?? 0} sub="tracked, not performance proof" />
       <Metric label="executions 7d" value={weekly?.executions_last_7d?.count ?? 0} sub="actual FINQALAB fills logged" />
       <Metric label="matured outcomes" value={matured ?? 0} sub="win-rate pending until mature" />
@@ -107,7 +107,7 @@ export default async function Page() {
 
     <Section title="opportunities and deployment gates" caption="orders separate from watchlist" icon={<Target size={17}/>}> 
       <div className="opps">
-        {opportunities.map((o: any) => <article className="opp" key={o.ticker}>
+        {opportunities.map((o: any) => <article className="opportunityCard" key={o.ticker}>
           <div className="oppHead"><div><span className="ticker">{o.ticker}</span><span className="sector">{o.sector}</span></div><span className="score">{o.score}</span></div>
           <div className="rows tight">
             <Row label="action" value={o.action} toneValue={o.action} />
