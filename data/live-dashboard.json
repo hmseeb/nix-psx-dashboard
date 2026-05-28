@@ -298,9 +298,9 @@
     ],
     "win_rate": 0.0
   },
-  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-05-27T03:50:46.743327Z\n- Recommendations tracked: 21\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 3\n- opportunity: 18\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
-  "published_at": "2026-05-27T03:50:46.797704+00:00",
-  "published_at_pkt": "2026-05-27T03:50:46.797704+00:00",
+  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-05-28T03:51:04.392958Z\n- Recommendations tracked: 27\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 4\n- opportunity: 23\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
+  "published_at": "2026-05-28T03:51:04.452137+00:00",
+  "published_at_pkt": "2026-05-28T03:51:04.452137+00:00",
   "rules": {
     "audit_notes": [
       "deterministic rules-engine output; llm may explain but not change scores",
@@ -314,8 +314,8 @@
       "tickers_total": 11,
       "tickers_with_200d_history": 0
     },
-    "generated_at": "2026-05-27T03:50:46.680894+00:00",
-    "generated_at_pkt": "2026-05-27 08:50 PKT",
+    "generated_at": "2026-05-28T03:51:04.333595+00:00",
+    "generated_at_pkt": "2026-05-28 08:51 PKT",
     "market_regime": {
       "indices": {
         "ACI": {
@@ -1009,7 +1009,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-05-27T03:50:46.743327Z\n- Recommendations tracked: 21\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 3\n- opportunity: 18\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 21; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
+      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-05-28T03:51:04.392958Z\n- Recommendations tracked: 27\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 4\n- opportunity: 23\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 27; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
     },
     {
       "cmd": [
@@ -1017,7 +1017,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "\n      \"backtest_path\": \"/data/.hermes/finance/psx-backtest/latest.json\",\n      \"best_sectors\": [],\n      \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-05-27T03:50:46.789606Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 21,\n      \"recommendation_count_by_action\": {\n        \"buy\": 3,\n        \"safe_hold\": 3,\n        \"watch_small_add\": 15\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 3,\n        \"opportunity\": 18\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 21,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 21,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 21,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
+      "stdout": "\n      \"backtest_path\": \"/data/.hermes/finance/psx-backtest/latest.json\",\n      \"best_sectors\": [],\n      \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-05-28T03:51:04.441136Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 27,\n      \"recommendation_count_by_action\": {\n        \"buy\": 3,\n        \"safe_hold\": 4,\n        \"watch_small_add\": 20\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 4,\n        \"opportunity\": 23\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 27,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 27,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 27,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
     }
   ],
   "schema_version": 1,
@@ -1031,8 +1031,8 @@
       "failed": {},
       "worked": {}
     },
-    "generated_at": "2026-05-27T03:50:46.765868+00:00",
-    "generated_at_pkt": "2026-05-27 08:50 PKT",
+    "generated_at": "2026-05-28T03:51:04.417452+00:00",
+    "generated_at_pkt": "2026-05-28 08:51 PKT",
     "guardrails": [
       "weekly review is diagnostic, not a live trade recommendation",
       "rule weight changes are proposals only and require human review",
@@ -1497,17 +1497,17 @@
         "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
         "best_sectors": [],
         "best_tickers": [],
-        "generated_at_utc": "2026-05-27T03:50:46.789606Z",
+        "generated_at_utc": "2026-05-28T03:51:04.441136Z",
         "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
-        "recommendation_count": 21,
+        "recommendation_count": 27,
         "recommendation_count_by_action": {
           "buy": 3,
-          "safe_hold": 3,
-          "watch_small_add": 15
+          "safe_hold": 4,
+          "watch_small_add": 20
         },
         "recommendation_count_by_type": {
-          "holding_risk": 3,
-          "opportunity": 18
+          "holding_risk": 4,
+          "opportunity": 23
         },
         "signals_that_failed": [],
         "signals_that_worked": [],
@@ -1518,7 +1518,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 21,
+            "pending": 27,
             "win_rate_pct": null,
             "wins": 0
           },
@@ -1528,7 +1528,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 21,
+            "pending": 27,
             "win_rate_pct": null,
             "wins": 0
           },
@@ -1538,7 +1538,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 21,
+            "pending": 27,
             "win_rate_pct": null,
             "wins": 0
           }
@@ -1549,84 +1549,11 @@
     },
     "period": {
       "days": 7,
-      "since_utc": "2026-05-20T03:50:46.765868+00:00"
+      "since_utc": "2026-05-21T03:51:04.417452+00:00"
     },
     "recommendations_last_7d": {
-      "count": 21,
+      "count": 27,
       "items": [
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 5,
-            "drawdown_risk": 10,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-05-25T16:37:48.787021+00:00",
-          "generated_at_pkt": "2026-05-25 21:37 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 34,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 267.67,
-            "portfolio_weight_pct": 100.0,
-            "shares": 385.0
-          },
-          "price_pkr": 267.67,
-          "recommendation_id": "ab8bf34da1ef883dafc1",
-          "recommendation_type": "holding_risk",
-          "score": 15,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "manual_bootstrap",
-          "stop_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "ENGROH",
-          "trigger": null
-        },
-        {
-          "action": "buy",
-          "breakdown": {
-            "catalyst_insider": 6,
-            "momentum": 15,
-            "quality_fundamentals": 20,
-            "sector_rotation": 15,
-            "valuation": 15,
-            "volume_accumulation": 10
-          },
-          "generated_at": "2026-05-25T16:37:48.787021+00:00",
-          "generated_at_pkt": "2026-05-25 21:37 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 34,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 541.73,
-          "recommendation_id": "5a112a54393cf2bcca65",
-          "recommendation_type": "opportunity",
-          "score": 81,
-          "score_type": "opportunity",
-          "sector": "fertilizer",
-          "source_job": "manual_bootstrap",
-          "stop_pkr": null,
-          "target_pkr": null,
-          "thesis": "defensive dividend profile",
-          "ticker": "FFC",
-          "trigger": "rotation to defensive + acceptable valuation"
-        },
         {
           "action": "buy",
           "breakdown": {
@@ -2343,6 +2270,243 @@
           },
           "price_pkr": 151.78,
           "recommendation_id": "8189066b20d4ba16a27c",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 70,
+          "score_type": "opportunity",
+          "sector": "tech",
+          "source_job": "rules_engine",
+          "stop_method": "percent",
+          "stop_pkr": 136.6,
+          "target_1_pkr": 174.55,
+          "target_2_pkr": 189.72,
+          "target_pkr": 174.55,
+          "thesis": "earnings growth profile",
+          "ticker": "SYS",
+          "trigger": "pullback entry with trend intact"
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 5,
+            "drawdown_risk": 10,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 267.67,
+            "portfolio_weight_pct": 100.0,
+            "shares": 385.0
+          },
+          "price_pkr": 267.67,
+          "recommendation_id": "25fc04ed6c04ac41fb44",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 15,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "ENGROH",
+          "trigger": null
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 6,
+            "momentum": 15,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 15,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 541.73,
+          "recommendation_id": "19eb72cdcf811c9f1c1b",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 81,
+          "score_type": "opportunity",
+          "sector": "fertilizer",
+          "source_job": "rules_engine",
+          "stop_method": "percent",
+          "stop_pkr": 509.23,
+          "target_1_pkr": 590.49,
+          "target_2_pkr": 622.99,
+          "target_pkr": 590.49,
+          "thesis": "defensive dividend profile",
+          "ticker": "FFC",
+          "trigger": "rotation to defensive + acceptable valuation"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 6,
+            "momentum": 20,
+            "quality_fundamentals": 20,
+            "sector_rotation": 10,
+            "valuation": 15,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 219.5,
+          "recommendation_id": "36b38a461aff867de0cd",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 81,
+          "score_type": "opportunity",
+          "sector": "power",
+          "source_job": "rules_engine",
+          "stop_method": "percent",
+          "stop_pkr": 206.33,
+          "target_1_pkr": 239.26,
+          "target_2_pkr": 252.43,
+          "target_pkr": 239.26,
+          "thesis": "defensive utility exposure",
+          "ticker": "HUBC",
+          "trigger": "risk-off rotation and stable cashflow outlook"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 25,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 5,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 330.05,
+          "recommendation_id": "2fc015b1f43012788274",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 78,
+          "score_type": "opportunity",
+          "sector": "e&p",
+          "source_job": "rules_engine",
+          "stop_method": "percent",
+          "stop_pkr": 310.25,
+          "target_1_pkr": 359.75,
+          "target_2_pkr": 379.56,
+          "target_pkr": 359.75,
+          "thesis": "large-cap energy beta",
+          "ticker": "OGDC",
+          "trigger": "sector inflow confirmation and improving momentum"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 10,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 15,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 658.52,
+          "recommendation_id": "1e945f2a57e7dd804594",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 73,
+          "score_type": "opportunity",
+          "sector": "e&p",
+          "source_job": "rules_engine",
+          "stop_method": "percent",
+          "stop_pkr": 619.01,
+          "target_1_pkr": 717.79,
+          "target_2_pkr": 757.3,
+          "target_pkr": 717.79,
+          "thesis": "energy cashflow + defensive macro hedge",
+          "ticker": "MARI",
+          "trigger": "oil-supported strength + no breakdown in broader market"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 0,
+            "momentum": 20,
+            "quality_fundamentals": 10,
+            "sector_rotation": 15,
+            "valuation": 15,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-05-28T03:45:21.738059+00:00",
+          "generated_at_pkt": "2026-05-28 08:45 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 34,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 151.78,
+          "recommendation_id": "0d83b959a80cfd132ae7",
           "recommendation_type": "opportunity",
           "risk_reward": "1:1.5 / 1:2.5",
           "score": 70,
