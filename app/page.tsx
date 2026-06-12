@@ -29,16 +29,20 @@ function Row({ label, value, toneValue }: { label: string; value: React.ReactNod
 }
 
 function actionText(rules: any, weekly: any) {
-  const holding = rules?.portfolio?.holdings?.[0];
-  const risk = holding?.risk_action || 'review';
+  const holdings = rules?.portfolio?.holdings || [];
+  const holding = holdings[0];
   const confidence = rules?.data_quality?.score_confidence || 'unknown';
   const opps = rules?.opportunities || [];
   const best = opps[0];
+  if (!holdings.length) {
+    return `no active PSX holdings. stay in cash; treat ${best?.ticker || 'top picks'} as watchlist only until a fresh FINQALAB buy is logged.`;
+  }
+  const risk = holding?.risk_action || 'review';
   if (confidence === 'low') {
-    return `hold ENGROH; treat ${best?.ticker || 'top picks'} as guarded watchlist until history improves.`;
+    return `hold ${holding?.ticker || 'active position'} only if actually owned; treat ${best?.ticker || 'top picks'} as guarded watchlist until history improves.`;
   }
   if (String(risk).includes('sell') || String(risk).includes('trim')) return `${risk} on ${holding?.ticker || 'portfolio'}; risk rules triggered.`;
-  return `hold ENGROH; no forced trade. ${weekly?.recommendations_last_7d?.count ?? 0} recommendations are being tracked.`;
+  return `hold ${holding?.ticker || 'active position'}; no forced trade. ${weekly?.recommendations_last_7d?.count ?? 0} recommendations are being tracked.`;
 }
 
 export default async function Page() {
@@ -83,15 +87,22 @@ export default async function Page() {
     </section>
 
     <section className="grid2">
-      <Section title="portfolio risk" caption="ENGROH only" icon={<WalletCards size={17}/>}> 
-        <div className="holdingHeader"><div><span className="ticker">{active.ticker || 'ENGROH'}</span><small>{active.shares ?? 0} shares · avg {formatPkr(active.avg_cost_pkr)}</small></div><Pill value={active.risk_action}>{active.risk_action || 'n/a'}</Pill></div>
-        <div className="rows">
-          <Row label="current/rules price" value={formatPkr(active.price)} />
-          <Row label="market value" value={formatPkr(active.market_value_pkr)} />
-          <Row label="unrealized p&l" value={`${formatPkr(active.unrealized_pnl_pkr)} · ${formatPct(active.unrealized_pnl_pct)}`} />
-          <Row label="portfolio weight" value={formatPct(active.portfolio_weight_pct)} />
-          <Row label="risk score" value={`${active.risk_score ?? 'n/a'}/100`} toneValue={active.risk_action} />
-        </div>
+      <Section title="portfolio risk" caption={holdings.length ? 'active holdings only' : 'cash / no active holdings'} icon={<WalletCards size={17}/>}> 
+        {holdings.length ? <>
+          <div className="holdingHeader"><div><span className="ticker">{active.ticker}</span><small>{active.shares ?? 0} shares · avg {formatPkr(active.avg_cost_pkr)}</small></div><Pill value={active.risk_action}>{active.risk_action || 'n/a'}</Pill></div>
+          <div className="rows">
+            <Row label="current/rules price" value={formatPkr(active.price)} />
+            <Row label="market value" value={formatPkr(active.market_value_pkr)} />
+            <Row label="unrealized p&l" value={`${formatPkr(active.unrealized_pnl_pkr)} · ${formatPct(active.unrealized_pnl_pct)}`} />
+            <Row label="portfolio weight" value={formatPct(active.portfolio_weight_pct)} />
+            <Row label="risk score" value={`${active.risk_score ?? 'n/a'}/100`} toneValue={active.risk_action} />
+          </div>
+        </> : <div className="rows">
+          <Row label="active holdings" value="none" toneValue="ok" />
+          <Row label="equity exposure" value="PKR 0" />
+          <Row label="cash stance" value="stay liquid until next clean buy signal" toneValue="watch" />
+          <Row label="sold names" value={(portfolio.sold_positions || []).map((p: any) => p.ticker).join(', ') || 'n/a'} />
+        </div>}
       </Section>
 
       <Section title="system snapshot" caption="same shape for daily + payday" icon={<Activity size={17}/>}> 
