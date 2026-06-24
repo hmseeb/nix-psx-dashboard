@@ -43,8 +43,9 @@ function assertActiveSet(label, rules) {
 
 assert.match(page, /getDashboardData/, 'dashboard page must load live dashboard data');
 assert.match(page, /PDF_HOLDINGS/, 'dashboard page must include the FINQALAB PDF reconciliation ledger');
-assert.match(page, /Account Statement &amp; Reconciliation/, 'dashboard page must use the statement reconciliation design');
-assert.match(page, /rows\.map/, 'dashboard page must render every ledger row');
+assert.match(page, /Total account value/, 'dashboard page must anchor on total account value');
+assert.match(page, /Allocation/, 'dashboard page must include the allocation breakdown');
+assert.match(page, /rows\.map/, 'dashboard page must render every holdings row');
 assert.doesNotMatch(page, /taken down|system offline|automation: paused/i, 'dashboard page must not render takedown copy');
 assert.match(route, /getDashboardData/, 'api route must use getDashboardData');
 assert.match(route, /NextResponse\.json\(data/, 'api route must return dashboard data');
