@@ -1,6 +1,6 @@
 # PSX Weekly Performance Dashboard
 
-- Generated UTC: 2026-06-24T12:04:56.441812Z
+- Generated UTC: 2026-06-24T12:32:40.910774Z
 - Recommendations tracked: 140
 - Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`
 - Backtest: `/data/.hermes/finance/psx-backtest/latest.json`

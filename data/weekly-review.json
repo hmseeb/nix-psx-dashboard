@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-24T12:04:56.468745+00:00",
-  "generated_at_pkt": "2026-06-24 17:04 PKT",
+  "generated_at": "2026-06-24T12:32:40.937804+00:00",
+  "generated_at_pkt": "2026-06-24 17:32 PKT",
   "period": {
-    "since_utc": "2026-06-17T12:04:56.468745+00:00",
+    "since_utc": "2026-06-17T12:32:40.937804+00:00",
     "days": 7
   },
   "recommendations_last_7d": {
@@ -883,7 +883,7 @@
       "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
       "best_sectors": [],
       "best_tickers": [],
-      "generated_at_utc": "2026-06-24T12:04:56.495936Z",
+      "generated_at_utc": "2026-06-24T12:32:40.965062Z",
       "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
       "recommendation_count": 140,
       "recommendation_count_by_action": {
