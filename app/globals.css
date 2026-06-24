@@ -1,29 +1,31 @@
 :root {
-  /* Brokerage / fintech trust system — white & cool gray canvas, one deep blue
-     accent, semantic green/red only. Inspired by Coinbase/Kraken: restrained,
-     legible, tabular figures, subtle shadows, generous spacing. */
-  --bg: #f4f6fa;
-  --surface: #ffffff;
-  --surface-2: #fafbfd;
-  --line: #e6eaf1;
-  --line-strong: #d4dbe6;
-  --text: #0c1726;
-  --text-2: #3b485e;
-  --muted: #647189;
-  --faint: #93a0b4;
-  --brand: #1554d6;
-  --brand-700: #103fa6;
-  --brand-50: #eef3fe;
-  --pos: #067a4e;
-  --pos-bg: #e7f6ee;
-  --neg: #c5392f;
-  --neg-bg: #fdecea;
-  --warn: #9a6700;
-  --warn-bg: #fdf3d8;
+  color-scheme: dark;
+  /* Dark-first brokerage / fintech trust system — deep near-black navy canvas,
+     elevated surfaces, a single electric cobalt accent, semantic green/red +
+     amber warning at accessible contrast. Restrained, legible, tabular figures,
+     subtle borders / shadows / glows. Same IA as the light system; only tone. */
+  --bg: #080b11;
+  --surface: #10151f;
+  --surface-2: #161d2a;
+  --line: #222a39;
+  --line-strong: #313b4f;
+  --text: #eaeff7;
+  --text-2: #b3bdcf;
+  --muted: #8b97ac;
+  --faint: #757f95;
+  --brand: #4d8dff;
+  --brand-700: #2f6fe6;
+  --brand-50: rgba(77, 141, 255, .14);
+  --pos: #3ddc84;
+  --pos-bg: rgba(61, 220, 132, .12);
+  --neg: #ff6b6b;
+  --neg-bg: rgba(255, 107, 107, .12);
+  --warn: #f5b54a;
+  --warn-bg: rgba(245, 181, 74, .12);
   --radius: 16px;
   --radius-sm: 12px;
-  --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 10px 26px rgba(16, 24, 40, .05);
-  --shadow-sm: 0 1px 2px rgba(16, 24, 40, .05);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 14px 34px rgba(0, 0, 0, .5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .35);
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 }
@@ -49,9 +51,9 @@ body {
 /* ── Sticky status bar ─────────────────────────────────────────────────────── */
 .topbar {
   position: sticky; top: 0; z-index: 20;
-  background: rgba(255, 255, 255, .82);
-  backdrop-filter: saturate(180%) blur(12px);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  background: rgba(10, 14, 22, .72);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--line);
 }
 .topbarInner {
@@ -61,7 +63,7 @@ body {
 .brand { display: flex; align-items: center; gap: 10px; }
 .brandMark {
   font: 700 12px/1 var(--sans); letter-spacing: .04em;
-  color: #fff; background: var(--brand); padding: 6px 8px; border-radius: 7px;
+  color: #fff; background: var(--brand-700); padding: 6px 8px; border-radius: 7px;
 }
 .brandName { font: 600 15px/1 var(--sans); letter-spacing: -.2px; color: var(--text); }
 .status { display: flex; align-items: center; gap: 14px; }
@@ -70,9 +72,9 @@ body {
   font: 600 12px/1 var(--sans); padding: 6px 10px; border-radius: 999px; border: 1px solid transparent;
 }
 .pillDot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
-.pillLive { color: var(--pos); background: var(--pos-bg); border-color: rgba(6, 122, 78, .18); }
-.pillLive .pillDot { background: var(--pos); box-shadow: 0 0 0 3px rgba(6, 122, 78, .14); }
-.pillStatic { color: var(--warn); background: var(--warn-bg); border-color: rgba(154, 103, 0, .2); }
+.pillLive { color: var(--pos); background: var(--pos-bg); border-color: rgba(61, 220, 132, .3); }
+.pillLive .pillDot { background: var(--pos); box-shadow: 0 0 0 3px rgba(61, 220, 132, .22); }
+.pillStatic { color: var(--warn); background: var(--warn-bg); border-color: rgba(245, 181, 74, .32); }
 .pillStatic .pillDot { background: var(--warn); }
 .asOf { font: 500 13px/1 var(--sans); color: var(--muted); }
 
@@ -208,7 +210,7 @@ body {
 }
 .watch li:last-child { border-bottom: none; }
 .wTick { font: 700 13px/1 var(--sans); color: var(--text); display: flex; align-items: center; gap: 6px; }
-.heldBadge { font: 700 9px/1 var(--sans); color: var(--brand); background: var(--brand-50); border: 1px solid rgba(21,84,214,.16); border-radius: 999px; padding: 3px 6px; text-transform: uppercase; letter-spacing: .04em; }
+.heldBadge { font: 700 9px/1 var(--sans); color: var(--brand); background: var(--brand-50); border: 1px solid rgba(77,141,255,.3); border-radius: 999px; padding: 3px 6px; text-transform: uppercase; letter-spacing: .04em; }
 .wAct { font-size: 11.5px; color: var(--muted); text-transform: capitalize; }
 .wScore { font: 700 14px/1 var(--sans); color: var(--brand); font-variant-numeric: tabular-nums; }
 
