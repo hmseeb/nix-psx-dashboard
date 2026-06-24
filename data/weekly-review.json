@@ -1,138 +1,34 @@
 {
-  "generated_at": "2026-05-25T18:46:32.656200+00:00",
-  "generated_at_pkt": "2026-05-25 23:46 PKT",
+  "generated_at": "2026-06-24T12:04:56.468745+00:00",
+  "generated_at_pkt": "2026-06-24 17:04 PKT",
   "period": {
-    "since_utc": "2026-05-18T18:46:32.656200+00:00",
+    "since_utc": "2026-06-17T12:04:56.468745+00:00",
     "days": 7
   },
   "recommendations_last_7d": {
-    "count": 6,
+    "count": 5,
     "items": [
       {
-        "recommendation_id": "ab8bf34da1ef883dafc1",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
-        "ticker": "ENGROH",
-        "sector": null,
-        "recommendation_type": "holding_risk",
-        "action": "safe_hold",
-        "score": 15,
-        "score_type": "risk",
-        "price_pkr": 267.67,
-        "thesis": "holding risk action safe_hold from deterministic risk score",
-        "trigger": null,
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
-        "market_regime": "neutral",
-        "portfolio_context": {
-          "active_holding": true,
-          "shares": 385.0,
-          "avg_cost_pkr": 267.67,
-          "portfolio_weight_pct": 100.0
-        },
-        "outcome_windows": {
-          "d7": null,
-          "d30": null,
-          "d90": null
-        },
-        "breakdown": {
-          "price_risk": 0,
-          "drawdown_risk": 10,
-          "sell_pressure": 0,
-          "sector_macro_risk": 0,
-          "fundamental_news_risk": 0,
-          "concentration_risk": 5
-        }
-      },
-      {
-        "recommendation_id": "5a112a54393cf2bcca65",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
-        "ticker": "FFC",
-        "sector": "fertilizer",
-        "recommendation_type": "opportunity",
-        "action": "buy",
-        "score": 81,
-        "score_type": "opportunity",
-        "price_pkr": 541.73,
-        "thesis": "defensive dividend profile",
-        "trigger": "rotation to defensive + acceptable valuation",
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
-        "market_regime": "neutral",
-        "portfolio_context": {
-          "active_holding": false
-        },
-        "outcome_windows": {
-          "d7": null,
-          "d30": null,
-          "d90": null
-        },
-        "breakdown": {
-          "momentum": 15,
-          "volume_accumulation": 10,
-          "sector_rotation": 15,
-          "quality_fundamentals": 20,
-          "valuation": 15,
-          "catalyst_insider": 6
-        }
-      },
-      {
-        "recommendation_id": "cb1bee55e40ad33d58aa",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
-        "ticker": "HUBC",
-        "sector": "power",
-        "recommendation_type": "opportunity",
-        "action": "buy",
-        "score": 81,
-        "score_type": "opportunity",
-        "price_pkr": 219.5,
-        "thesis": "defensive utility exposure",
-        "trigger": "risk-off rotation and stable cashflow outlook",
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
-        "market_regime": "neutral",
-        "portfolio_context": {
-          "active_holding": false
-        },
-        "outcome_windows": {
-          "d7": null,
-          "d30": null,
-          "d90": null
-        },
-        "breakdown": {
-          "momentum": 20,
-          "volume_accumulation": 10,
-          "sector_rotation": 10,
-          "quality_fundamentals": 20,
-          "valuation": 15,
-          "catalyst_insider": 6
-        }
-      },
-      {
-        "recommendation_id": "e6a2d74279d2afac085b",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
+        "recommendation_id": "ab169d6d06c13f4c0627",
+        "generated_at": "2026-06-18T03:45:38.539983+00:00",
+        "generated_at_pkt": "2026-06-18 08:45 PKT",
+        "source_job": "rules_engine",
         "ticker": "OGDC",
         "sector": "e&p",
         "recommendation_type": "opportunity",
-        "action": "buy",
+        "action": "watch_small_add",
         "score": 78,
         "score_type": "opportunity",
-        "price_pkr": 330.05,
+        "price_pkr": 334.04,
         "thesis": "large-cap energy beta",
         "trigger": "sector inflow confirmation and improving momentum",
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
+        "stop_pkr": 314.0,
+        "target_pkr": 364.1,
+        "target_1_pkr": 364.1,
+        "target_2_pkr": 384.15,
+        "risk_reward": "1:1.5 / 1:2.5",
+        "stop_method": "percent",
+        "market_regime_score": 50,
         "market_regime": "neutral",
         "portfolio_context": {
           "active_holding": false
@@ -152,22 +48,26 @@
         }
       },
       {
-        "recommendation_id": "634a08649472170483cb",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
+        "recommendation_id": "24beaa861559479ee9e0",
+        "generated_at": "2026-06-18T03:45:38.539983+00:00",
+        "generated_at_pkt": "2026-06-18 08:45 PKT",
+        "source_job": "rules_engine",
         "ticker": "MARI",
         "sector": "e&p",
         "recommendation_type": "opportunity",
         "action": "watch_small_add",
         "score": 73,
         "score_type": "opportunity",
-        "price_pkr": 658.52,
+        "price_pkr": 669.97,
         "thesis": "energy cashflow + defensive macro hedge",
         "trigger": "oil-supported strength + no breakdown in broader market",
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
+        "stop_pkr": 629.77,
+        "target_pkr": 730.27,
+        "target_1_pkr": 730.27,
+        "target_2_pkr": 770.47,
+        "risk_reward": "1:1.5 / 1:2.5",
+        "stop_method": "percent",
+        "market_regime_score": 50,
         "market_regime": "neutral",
         "portfolio_context": {
           "active_holding": false
@@ -187,22 +87,26 @@
         }
       },
       {
-        "recommendation_id": "c70e59984979b7be9442",
-        "generated_at": "2026-05-25T16:37:48.787021+00:00",
-        "generated_at_pkt": "2026-05-25 21:37 PKT",
-        "source_job": "manual_bootstrap",
-        "ticker": "SYS",
-        "sector": "tech",
+        "recommendation_id": "588d67838bbbf953aa2a",
+        "generated_at": "2026-06-18T03:45:38.539983+00:00",
+        "generated_at_pkt": "2026-06-18 08:45 PKT",
+        "source_job": "rules_engine",
+        "ticker": "EFERT",
+        "sector": "fertilizer",
         "recommendation_type": "opportunity",
         "action": "watch_small_add",
-        "score": 70,
+        "score": 68,
         "score_type": "opportunity",
-        "price_pkr": 151.78,
-        "thesis": "earnings growth profile",
-        "trigger": "pullback entry with trend intact",
-        "stop_pkr": null,
-        "target_pkr": null,
-        "market_regime_score": 34,
+        "price_pkr": 201.98,
+        "thesis": "fertilizer momentum candidate",
+        "trigger": "volume expansion with positive sector breadth",
+        "stop_pkr": 189.86,
+        "target_pkr": 220.16,
+        "target_1_pkr": 220.16,
+        "target_2_pkr": 232.28,
+        "risk_reward": "1:1.5 / 1:2.5",
+        "stop_method": "percent",
+        "market_regime_score": 50,
         "market_regime": "neutral",
         "portfolio_context": {
           "active_holding": false
@@ -213,19 +117,307 @@
           "d90": null
         },
         "breakdown": {
-          "momentum": 20,
+          "momentum": 5,
           "volume_accumulation": 10,
           "sector_rotation": 15,
+          "quality_fundamentals": 20,
+          "valuation": 15,
+          "catalyst_insider": 3
+        }
+      },
+      {
+        "recommendation_id": "c9bc067fdc29f413cdb4",
+        "generated_at": "2026-06-18T03:45:38.539983+00:00",
+        "generated_at_pkt": "2026-06-18 08:45 PKT",
+        "source_job": "rules_engine",
+        "ticker": "LUCK",
+        "sector": "cement",
+        "recommendation_type": "opportunity",
+        "action": "watch_only",
+        "score": 63,
+        "score_type": "opportunity",
+        "price_pkr": 470.61,
+        "thesis": "cyclical risk-on proxy",
+        "trigger": "risk-on regime + sector rotation inflow",
+        "stop_pkr": 423.55,
+        "target_pkr": 541.2,
+        "target_1_pkr": 541.2,
+        "target_2_pkr": 588.26,
+        "risk_reward": "1:1.5 / 1:2.5",
+        "stop_method": "percent",
+        "market_regime_score": 50,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 15,
+          "volume_accumulation": 10,
+          "sector_rotation": 10,
           "quality_fundamentals": 10,
           "valuation": 15,
-          "catalyst_insider": 0
+          "catalyst_insider": 3
+        }
+      },
+      {
+        "recommendation_id": "8240d6ce87514b32863a",
+        "generated_at": "2026-06-18T03:45:38.539983+00:00",
+        "generated_at_pkt": "2026-06-18 08:45 PKT",
+        "source_job": "rules_engine",
+        "ticker": "FFC",
+        "sector": "fertilizer",
+        "recommendation_type": "opportunity",
+        "action": "watch_only",
+        "score": 61,
+        "score_type": "opportunity",
+        "price_pkr": 563.96,
+        "thesis": "defensive dividend profile",
+        "trigger": "rotation to defensive + acceptable valuation",
+        "stop_pkr": 530.12,
+        "target_pkr": 614.72,
+        "target_1_pkr": 614.72,
+        "target_2_pkr": 648.55,
+        "risk_reward": "1:1.5 / 1:2.5",
+        "stop_method": "percent",
+        "market_regime_score": 50,
+        "market_regime": "neutral",
+        "portfolio_context": {
+          "active_holding": false
+        },
+        "outcome_windows": {
+          "d7": null,
+          "d30": null,
+          "d90": null
+        },
+        "breakdown": {
+          "momentum": 5,
+          "volume_accumulation": 5,
+          "sector_rotation": 10,
+          "quality_fundamentals": 20,
+          "valuation": 15,
+          "catalyst_insider": 6
         }
       }
     ]
   },
   "executions_last_7d": {
-    "count": 0,
-    "items": []
+    "count": 19,
+    "items": [
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 515.74,
+        "execution_id": "6786355f9429e31a",
+        "fees_pkr": 68.21,
+        "notes": "cashbook amount 23792.25; balance after 629779.04",
+        "quantity": 46,
+        "side": "buy",
+        "ticker": "MEBL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 569.9,
+        "execution_id": "07eb3231962079f2",
+        "fees_pkr": 58.98,
+        "notes": "cashbook amount 20575.38; balance after 609203.66",
+        "quantity": 36,
+        "side": "buy",
+        "ticker": "FFC"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 249.25,
+        "execution_id": "9dc0b05f6b138261",
+        "fees_pkr": 114.65,
+        "notes": "cashbook amount 39994.65; balance after 569209.01",
+        "quantity": 160,
+        "side": "buy",
+        "ticker": "PPL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 515.73,
+        "execution_id": "407f24171b057c49",
+        "fees_pkr": 45.96,
+        "notes": "cashbook amount 16033.59; balance after 553175.41",
+        "quantity": 31,
+        "side": "buy",
+        "ticker": "MEBL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 569.97,
+        "execution_id": "c7bad264b40a66ff",
+        "fees_pkr": 55.71,
+        "notes": "cashbook amount 19434.69; balance after 533740.72",
+        "quantity": 34,
+        "side": "buy",
+        "ticker": "FFC"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 155.48,
+        "execution_id": "94205225d40c9fb2",
+        "fees_pkr": 114.88,
+        "notes": "cashbook amount 40073.24; balance after 493667.47",
+        "quantity": 257,
+        "side": "buy",
+        "ticker": "SYS"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-18",
+        "executed_price_pkr": 473.3,
+        "execution_id": "cf28798ca36ad198",
+        "fees_pkr": 114.3,
+        "notes": "cashbook amount 39871.50; balance after 428422.97",
+        "quantity": 84,
+        "side": "buy",
+        "ticker": "LUCK"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-19",
+        "executed_price_pkr": 282.8,
+        "execution_id": "75c7374decf1f336",
+        "fees_pkr": 207.33,
+        "notes": "cashbook amount 72321.33; balance after 356101.65",
+        "quantity": 255,
+        "side": "buy",
+        "ticker": "ENGROH"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-19",
+        "executed_price_pkr": 562.44,
+        "execution_id": "7a5ebc4698ef352b",
+        "fees_pkr": 208.59,
+        "notes": "cashbook amount 72763.35; balance after 283338.29",
+        "quantity": 129,
+        "side": "buy",
+        "ticker": "FFC"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-19",
+        "executed_price_pkr": 513.4,
+        "execution_id": "9d4871e3f68169f9",
+        "fees_pkr": 206.64,
+        "notes": "cashbook amount 72082.64; balance after 211255.65",
+        "quantity": 140,
+        "side": "buy",
+        "ticker": "MEBL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-19",
+        "executed_price_pkr": 234.78,
+        "execution_id": "79e915f0fc893e9b",
+        "fees_pkr": 209.25,
+        "notes": "cashbook amount 72991.05; balance after 138264.60",
+        "quantity": 310,
+        "side": "buy",
+        "ticker": "HUBC"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-19",
+        "executed_price_pkr": 463.89,
+        "execution_id": "3844d9cee9773179",
+        "fees_pkr": 202.72,
+        "notes": "cashbook amount 70714.00; balance after 67550.60",
+        "quantity": 152,
+        "side": "buy",
+        "ticker": "LUCK"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "77224748001f3280",
+        "fees_pkr": 2.7,
+        "notes": "cashbook amount 942.60; balance after 19.00",
+        "quantity": 10,
+        "side": "buy",
+        "ticker": "SEARL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 150.0,
+        "execution_id": "2c2f5d5064dd0436",
+        "fees_pkr": 241.5,
+        "notes": "cashbook amount 84241.50; balance after 174519.50",
+        "quantity": 560,
+        "side": "buy",
+        "ticker": "SYS"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "6ae9613eeeaf066c",
+        "fees_pkr": 82.42,
+        "notes": "cashbook amount 28749.37; balance after 145770.13",
+        "quantity": 305,
+        "side": "buy",
+        "ticker": "SEARL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "870a787c23fb4dbf",
+        "fees_pkr": 149.97,
+        "notes": "cashbook amount 52314.42; balance after 93455.71",
+        "quantity": 555,
+        "side": "buy",
+        "ticker": "SEARL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "b876efcdd8200fee",
+        "fees_pkr": 54.04,
+        "notes": "cashbook amount 18852.04; balance after 74603.66",
+        "quantity": 200,
+        "side": "buy",
+        "ticker": "SEARL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "f19dd84768edf32d",
+        "fees_pkr": 16.21,
+        "notes": "cashbook amount 5655.61; balance after 68948.05",
+        "quantity": 60,
+        "side": "buy",
+        "ticker": "SEARL"
+      },
+      {
+        "broker": "FINQALAB",
+        "date": "2026-06-24",
+        "executed_price_pkr": 93.99,
+        "execution_id": "239bd0ab027a9449",
+        "fees_pkr": 52.69,
+        "notes": "cashbook amount 18380.74; balance after 50567.31",
+        "quantity": 195,
+        "side": "buy",
+        "ticker": "SEARL"
+      }
+    ]
   },
   "matured_outcomes": {
     "count": 0,
@@ -240,106 +432,106 @@
   "latest_rules_data_quality": {
     "history_coverage_pct": 0.0,
     "tickers_with_200d_history": 0,
-    "tickers_total": 11,
+    "tickers_total": 13,
     "score_confidence": "low"
   },
   "latest_market_regime": {
-    "score": 34,
+    "score": 38,
     "regime": "neutral",
     "reasons": [
       "KSE100 strong positive",
-      "KMI30 strong positive"
+      "KMI30 positive"
     ],
     "indices": {
       "KSE100": {
-        "value": 171725.29,
-        "change": 3881.05,
-        "pct": 2.31
+        "value": 179571.26,
+        "change": 1878.34,
+        "pct": 1.06
       },
       "KSE100PR": {
-        "value": 52376.16,
-        "change": 1183.71,
-        "pct": 2.31
+        "value": 54758.61,
+        "change": 572.78,
+        "pct": 1.06
       },
       "ALLSHR": {
-        "value": 103214.48,
-        "change": 2024.02,
-        "pct": 2.0
+        "value": 108600.93,
+        "change": 1073.54,
+        "pct": 1.0
       },
       "KSE30": {
-        "value": 51517.13,
-        "change": 1209.13,
-        "pct": 2.4
+        "value": 53548.41,
+        "change": 525.53,
+        "pct": 0.99
       },
       "KMI30": {
-        "value": 246565.7,
-        "change": 5524.54,
-        "pct": 2.29
+        "value": 256725.69,
+        "change": 1936.42,
+        "pct": 0.76
       },
       "BKTI": {
-        "value": 47299.7,
-        "change": 1394.54,
-        "pct": 3.04
+        "value": 48625.03,
+        "change": 658.39,
+        "pct": 1.37
       },
       "OGTI": {
-        "value": 36341.36,
-        "change": 783.44,
-        "pct": 2.2
+        "value": 37179.52,
+        "change": 345.86,
+        "pct": 0.94
       },
       "KMIALLSHR": {
-        "value": 67042.77,
-        "change": 1273.86,
-        "pct": 1.94
+        "value": 70620.69,
+        "change": 683.55,
+        "pct": 0.98
       },
       "PSXDIV20": {
-        "value": 78920.18,
-        "change": 1506.88,
-        "pct": 1.95
+        "value": 82793.49,
+        "change": 545.74,
+        "pct": 0.66
       },
       "UPP9": {
-        "value": 60443.5,
-        "change": 1399.42,
-        "pct": 2.37
+        "value": 62995.45,
+        "change": 666.12,
+        "pct": 1.07
       },
       "NITPGI": {
-        "value": 45818.14,
-        "change": 1104.2,
-        "pct": 2.47
+        "value": 47359.99,
+        "change": 505.54,
+        "pct": 1.08
       },
       "NBPPGI": {
-        "value": 49922.37,
-        "change": 1220.12,
-        "pct": 2.51
+        "value": 51541.72,
+        "change": 497.97,
+        "pct": 0.98
       },
       "MZNPI": {
-        "value": 30276.3,
-        "change": 752.69,
-        "pct": 2.55
+        "value": 31613.22,
+        "change": 252.84,
+        "pct": 0.81
       },
       "JSMFI": {
-        "value": 41362.34,
-        "change": 775.32,
-        "pct": 1.91
+        "value": 43264.52,
+        "change": 571.99,
+        "pct": 1.34
       },
       "ACI": {
-        "value": 22396.99,
-        "change": 663.37,
-        "pct": 3.05
+        "value": 24458.68,
+        "change": 412.45,
+        "pct": 1.72
       },
       "JSGBKTI": {
-        "value": 72433.77,
-        "change": 2250.36,
-        "pct": 3.21
+        "value": 73681.62,
+        "change": 664.26,
+        "pct": 0.91
       },
       "HBLTTI": {
-        "value": 18413.74,
-        "change": 17.9,
-        "pct": 0.1
+        "value": 18601.61,
+        "change": 5.65,
+        "pct": 0.03
       },
       "MII30": {
-        "value": 22305.99,
-        "change": 495.47,
-        "pct": 2.27
+        "value": 23461.72,
+        "change": 225.93,
+        "pct": 0.97
       }
     }
   },
@@ -691,17 +883,19 @@
       "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
       "best_sectors": [],
       "best_tickers": [],
-      "generated_at_utc": "2026-05-25T18:46:32.691905Z",
+      "generated_at_utc": "2026-06-24T12:04:56.495936Z",
       "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
-      "recommendation_count": 6,
+      "recommendation_count": 140,
       "recommendation_count_by_action": {
-        "buy": 3,
-        "safe_hold": 1,
-        "watch_small_add": 2
+        "buy": 9,
+        "hold_only": 37,
+        "safe_hold": 11,
+        "watch_only": 2,
+        "watch_small_add": 81
       },
       "recommendation_count_by_type": {
-        "holding_risk": 1,
-        "opportunity": 5
+        "holding_risk": 11,
+        "opportunity": 129
       },
       "signals_that_failed": [],
       "signals_that_worked": [],
@@ -712,7 +906,7 @@
           "losses": 0,
           "neutral": 0,
           "note": "pending/immature outcomes excluded from win-rate denominator",
-          "pending": 6,
+          "pending": 140,
           "win_rate_pct": null,
           "wins": 0
         },
@@ -722,7 +916,7 @@
           "losses": 0,
           "neutral": 0,
           "note": "pending/immature outcomes excluded from win-rate denominator",
-          "pending": 6,
+          "pending": 140,
           "win_rate_pct": null,
           "wins": 0
         },
@@ -732,7 +926,7 @@
           "losses": 0,
           "neutral": 0,
           "note": "pending/immature outcomes excluded from win-rate denominator",
-          "pending": 6,
+          "pending": 140,
           "win_rate_pct": null,
           "wins": 0
         }

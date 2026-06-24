@@ -1,19 +1,14 @@
+
 import { NextResponse } from 'next/server';
+import { getDashboardData } from '@/lib/data';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
-  return NextResponse.json(
-    {
-      ok: false,
-      status: 'offline',
-      message: 'PSX dashboard has been taken down by owner request.',
+  const data = await getDashboardData();
+  return NextResponse.json(data, {
+    headers: {
+      'Cache-Control': 'no-store',
     },
-    {
-      status: 410,
-      headers: {
-        'Cache-Control': 'no-store',
-      },
-    }
-  );
+  });
 }

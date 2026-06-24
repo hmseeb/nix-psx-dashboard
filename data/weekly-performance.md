@@ -1,18 +1,18 @@
 # PSX Weekly Performance Dashboard
 
-- Generated UTC: 2026-05-25T18:46:32.629802Z
-- Recommendations tracked: 6
+- Generated UTC: 2026-06-24T12:04:56.441812Z
+- Recommendations tracked: 140
 - Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`
 - Backtest: `/data/.hermes/finance/psx-backtest/latest.json`
 
 ## Recommendation Count
-- holding_risk: 1
-- opportunity: 5
+- holding_risk: 11
+- opportunity: 129
 
 ## 7D / 30D / 90D Win Rate
-- D 7: pending 6; no mature outcomes yet, so no win-rate conclusion.
-- D 30: pending 6; no mature outcomes yet, so no win-rate conclusion.
-- D 90: pending 6; no mature outcomes yet, so no win-rate conclusion.
+- D 7: pending 140; no mature outcomes yet, so no win-rate conclusion.
+- D 30: pending 140; no mature outcomes yet, so no win-rate conclusion.
+- D 90: pending 140; no mature outcomes yet, so no win-rate conclusion.
 - Pending/immature outcomes are reported but excluded from win-rate conclusions.
 
 ## Average Return by Action
