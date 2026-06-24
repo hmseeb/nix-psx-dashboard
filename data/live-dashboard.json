@@ -298,9 +298,9 @@
     ],
     "win_rate": 0.0
   },
-  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-06-24T12:04:56.441812Z\n- Recommendations tracked: 140\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 11\n- opportunity: 129\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
-  "published_at": "2026-06-24T12:04:56.505921+00:00",
-  "published_at_pkt": "2026-06-24T12:04:56.505921+00:00",
+  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-06-24T12:32:40.910774Z\n- Recommendations tracked: 140\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 11\n- opportunity: 129\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
+  "published_at": "2026-06-24T12:32:40.977972+00:00",
+  "published_at_pkt": "2026-06-24T12:32:40.977972+00:00",
   "rules": {
     "audit_notes": [
       "deterministic rules-engine output; llm may explain but not change scores",
@@ -314,8 +314,8 @@
       "tickers_total": 13,
       "tickers_with_200d_history": 0
     },
-    "generated_at": "2026-06-24T12:04:56.380088+00:00",
-    "generated_at_pkt": "2026-06-24 17:04 PKT",
+    "generated_at": "2026-06-24T12:32:40.835390+00:00",
+    "generated_at_pkt": "2026-06-24 17:32 PKT",
     "market_regime": {
       "indices": {
         "ACI": {
@@ -469,7 +469,7 @@
         "target_1_pkr": 608.96,
         "target_2_pkr": 642.48,
         "ticker": "FFC",
-        "volume": 1284790.0
+        "volume": 1279546.0
       },
       {
         "action": "watch_small_add",
@@ -569,7 +569,7 @@
         "target_1_pkr": 537.91,
         "target_2_pkr": 584.69,
         "ticker": "LUCK",
-        "volume": 1694484.0
+        "volume": 1991650.0
       },
       {
         "action": "watch_small_add",
@@ -669,7 +669,7 @@
         "target_1_pkr": 218.23,
         "target_2_pkr": 230.24,
         "ticker": "EFERT",
-        "volume": 1527882.0
+        "volume": 2149768.0
       },
       {
         "action": "watch_small_add",
@@ -719,7 +719,7 @@
         "target_1_pkr": 172.42,
         "target_2_pkr": 187.41,
         "ticker": "SYS",
-        "volume": 580530.0
+        "volume": 1144815.0
       },
       {
         "action": "watch_only",
@@ -769,7 +769,7 @@
         "target_1_pkr": 123.22,
         "target_2_pkr": 133.94,
         "ticker": "MLCF",
-        "volume": 19003792.0
+        "volume": 27194830.0
       },
       {
         "action": "watch_only",
@@ -819,7 +819,7 @@
         "target_1_pkr": 575.97,
         "target_2_pkr": 617.11,
         "ticker": "MEBL",
-        "volume": 1511977.0
+        "volume": 1044374.0
       },
       {
         "action": "watch_only",
@@ -869,7 +869,7 @@
         "target_1_pkr": 252.24,
         "target_2_pkr": 266.12,
         "ticker": "HUBC",
-        "volume": 3438583.0
+        "volume": 3198012.0
       },
       {
         "action": "watch_only",
@@ -923,7 +923,12 @@
       }
     ],
     "portfolio": {
+      "account_value_pkr": 815831.86,
+      "as_of": "2026-06-24",
+      "book_cost_pkr": 769783.95,
+      "cash_pkr": 50567.31,
       "estimated_value_pkr": 765264.55,
+      "funded_capital_pkr": 820351.26,
       "holdings": [
         {
           "avg_cost_pkr": 283.6131,
@@ -935,6 +940,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 72321.33,
           "data_quality": {
             "computed_at_utc": "2026-06-24T12:04:17.308226Z",
             "enough_for_126d": false,
@@ -960,9 +966,11 @@
           "risk_action": "safe_hold",
           "risk_score": 5,
           "shares": 255.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "ENGROH",
           "unrealized_pnl_pct": -0.9,
-          "unrealized_pnl_pkr": -648.49
+          "unrealized_pnl_pkr": -648.48
         },
         {
           "avg_cost_pkr": 566.7006,
@@ -974,6 +982,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 112773.42,
           "data_quality": {
             "computed_at_utc": "2026-06-24T12:04:17.308473Z",
             "enough_for_126d": false,
@@ -999,6 +1008,8 @@
           "risk_action": "safe_hold",
           "risk_score": 15,
           "shares": 199.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "FFC",
           "unrealized_pnl_pct": -1.42,
           "unrealized_pnl_pkr": -1596.1
@@ -1013,6 +1024,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 72991.05,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1034,6 +1046,8 @@
           "risk_action": "safe_hold",
           "risk_score": 5,
           "shares": 310.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "HUBC",
           "unrealized_pnl_pct": -1.72,
           "unrealized_pnl_pkr": -1253.95
@@ -1048,6 +1062,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 110585.5,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1069,9 +1084,11 @@
           "risk_action": "safe_hold",
           "risk_score": 10,
           "shares": 236.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "LUCK",
           "unrealized_pnl_pct": -0.18,
-          "unrealized_pnl_pkr": -196.49
+          "unrealized_pnl_pkr": -196.5
         },
         {
           "avg_cost_pkr": 515.7073,
@@ -1083,6 +1100,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 111908.48,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1104,6 +1122,8 @@
           "risk_action": "safe_hold",
           "risk_score": 0,
           "shares": 217.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "MEBL",
           "unrealized_pnl_pct": -0.28,
           "unrealized_pnl_pkr": -314.06
@@ -1118,6 +1138,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 39994.65,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1139,9 +1160,11 @@
           "risk_action": "safe_hold",
           "risk_score": 10,
           "shares": 160.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "PPL",
           "unrealized_pnl_pct": -0.79,
-          "unrealized_pnl_pkr": -317.86
+          "unrealized_pnl_pkr": -317.85
         },
         {
           "avg_cost_pkr": 94.2602,
@@ -1153,6 +1176,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 124894.78,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1174,9 +1198,11 @@
           "risk_action": "safe_hold",
           "risk_score": 20,
           "shares": 1325.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "SEARL",
           "unrealized_pnl_pct": 1.3,
-          "unrealized_pnl_pkr": 1629.48
+          "unrealized_pnl_pkr": 1629.47
         },
         {
           "avg_cost_pkr": 152.16,
@@ -1188,6 +1214,7 @@
             "sector_macro_risk": 0,
             "sell_pressure": 0
           },
+          "cost_basis_pkr": 124314.74,
           "data_quality": {
             "enough_for_126d": false,
             "enough_for_200d": false,
@@ -1209,9 +1236,11 @@
           "risk_action": "safe_hold",
           "risk_score": 10,
           "shares": 817.0,
+          "source": "FINQALAB cashbook report 2026-06-24",
+          "status": "active",
           "ticker": "SYS",
           "unrealized_pnl_pct": -1.47,
-          "unrealized_pnl_pkr": -1821.91
+          "unrealized_pnl_pkr": -1821.93
         }
       ],
       "sold_positions": [
@@ -1232,7 +1261,9 @@
           "ticker": "ENGROH"
         }
       ],
-      "source": "/data/.hermes/finance/psx-portfolio.yaml"
+      "source": "/data/.hermes/finance/psx-portfolio.yaml",
+      "unrealized_pnl_pct": -0.59,
+      "unrealized_pnl_pkr": -4519.4
     },
     "rejects": [],
     "rules_name": "nix-psx-rules-engine",
@@ -1263,7 +1294,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-06-24T12:04:56.441812Z\n- Recommendations tracked: 140\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 11\n- opportunity: 129\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
+      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-06-24T12:32:40.910774Z\n- Recommendations tracked: 140\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 11\n- opportunity: 129\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 140; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
     },
     {
       "cmd": [
@@ -1271,7 +1302,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "st/latest.json\",\n      \"best_sectors\": [],\n      \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-06-24T12:04:56.495936Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 140,\n      \"recommendation_count_by_action\": {\n        \"buy\": 9,\n        \"hold_only\": 37,\n        \"safe_hold\": 11,\n        \"watch_only\": 2,\n        \"watch_small_add\": 81\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 11,\n        \"opportunity\": 129\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
+      "stdout": "st/latest.json\",\n      \"best_sectors\": [],\n      \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-06-24T12:32:40.965062Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 140,\n      \"recommendation_count_by_action\": {\n        \"buy\": 9,\n        \"hold_only\": 37,\n        \"safe_hold\": 11,\n        \"watch_only\": 2,\n        \"watch_small_add\": 81\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 11,\n        \"opportunity\": 129\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 140,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
     }
   ],
   "schema_version": 1,
@@ -1495,8 +1526,8 @@
       "failed": {},
       "worked": {}
     },
-    "generated_at": "2026-06-24T12:04:56.468745+00:00",
-    "generated_at_pkt": "2026-06-24 17:04 PKT",
+    "generated_at": "2026-06-24T12:32:40.937804+00:00",
+    "generated_at_pkt": "2026-06-24 17:32 PKT",
     "guardrails": [
       "weekly review is diagnostic, not a live trade recommendation",
       "rule weight changes are proposals only and require human review",
@@ -1961,7 +1992,7 @@
         "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
         "best_sectors": [],
         "best_tickers": [],
-        "generated_at_utc": "2026-06-24T12:04:56.495936Z",
+        "generated_at_utc": "2026-06-24T12:32:40.965062Z",
         "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
         "recommendation_count": 140,
         "recommendation_count_by_action": {
@@ -2015,7 +2046,7 @@
     },
     "period": {
       "days": 7,
-      "since_utc": "2026-06-17T12:04:56.468745+00:00"
+      "since_utc": "2026-06-17T12:32:40.937804+00:00"
     },
     "recommendations_last_7d": {
       "count": 5,
