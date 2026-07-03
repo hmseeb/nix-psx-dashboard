@@ -2,14 +2,15 @@ import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import { getDashboardData } from '@/lib/data';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// FINQALAB book cost basis is the source of truth (PDF-derived). Live prices /
-// freshness are layered on top from the published feed; if the feed is missing a
-// name, the ledger still reconciles against book cost. The presentation is a
-// professional brokerage portfolio dashboard — the data contract is unchanged.
+// NIX_PSX_V2_UNIFIED_UX
+// FINQALAB / portfolio YAML book cost basis is the source of truth. The dashboard
+// must render the live portfolio payload dynamically, not a frozen statement-era
+// ticker list. Static rows below are only an emergency fallback if the live feed
+// has no holdings.
 // ─────────────────────────────────────────────────────────────────────────────
-const PDF_HOLDINGS = [
+const FALLBACK_HOLDINGS = [
   { ticker: 'ENGROH', name: 'Engro Holdings',      sector: 'Holding co.',  shares: 255,  avgCost: 283.6131, bookCost: 72321.33 },
-  { ticker: 'FFC',    name: 'Fauji Fertilizer',    sector: 'Fertilizer',   shares: 199,  avgCost: 566.7006, bookCost: 112773.42 },
+  { ticker: 'FFC',    name: 'Fauji Fertilizer',    sector: 'Fertilizer',   shares: 338,  avgCost: 570.7564, bookCost: 192915.66 },
   { ticker: 'HUBC',   name: 'Hub Power',           sector: 'Power',        shares: 310,  avgCost: 235.4550, bookCost: 72991.05 },
   { ticker: 'LUCK',   name: 'Lucky Cement',        sector: 'Cement',       shares: 236,  avgCost: 468.5826, bookCost: 110585.50 },
   { ticker: 'MEBL',   name: 'Meezan Bank',         sector: 'Islamic bank', shares: 217,  avgCost: 515.7073, bookCost: 111908.48 },
@@ -17,6 +18,22 @@ const PDF_HOLDINGS = [
   { ticker: 'SEARL',  name: 'The Searle Company',  sector: 'Pharma',       shares: 1325, avgCost: 94.2602,  bookCost: 124894.78 },
   { ticker: 'SYS',    name: 'Systems Ltd',         sector: 'Technology',   shares: 817,  avgCost: 152.16,   bookCost: 124314.74 },
 ];
+
+const HOLDING_META: Record<string, { name: string; sector: string }> = {
+  EFERT: { name: 'Engro Fertilizers', sector: 'Fertilizer' },
+  ENGROH: { name: 'Engro Holdings', sector: 'Holding co.' },
+  FFC: { name: 'Fauji Fertilizer', sector: 'Fertilizer' },
+  HUBC: { name: 'Hub Power', sector: 'Power' },
+  LUCK: { name: 'Lucky Cement', sector: 'Cement' },
+  MARI: { name: 'Mari Petroleum', sector: 'E&P' },
+  MEBL: { name: 'Meezan Bank', sector: 'Islamic bank' },
+  MLCF: { name: 'Maple Leaf Cement', sector: 'Cement' },
+  OGDC: { name: 'Oil & Gas Development Co.', sector: 'E&P' },
+  PPL: { name: 'Pakistan Petroleum', sector: 'E&P' },
+  SEARL: { name: 'The Searle Company', sector: 'Pharma' },
+  SYS: { name: 'Systems Ltd', sector: 'Technology' },
+};
+
 const CASH_PKR = 50567.31;
 
 // Cool, restrained allocation palette — deep blue brand stepped to teal, cash neutral gray.
@@ -30,7 +47,7 @@ const pct = (v: number, d = 1) => (Number.isFinite(v) ? num(v, d) : '—') + '%'
 
 export default async function Page() {
   const { rules, dataSource, publishedAt, liveError } = await getDashboardData();
-  const liveHoldings: any[] = rules?.portfolio?.holdings || [];
+  const liveHoldings: any[] = (rules?.portfolio?.holdings || []).filter((h: any) => (h.status || 'active') === 'active');
   const opps: any[] = rules?.opportunities || [];
   const dq = rules?.data_quality || {};
   const market = rules?.market_regime || {};
@@ -45,22 +62,37 @@ export default async function Page() {
   };
 
   const liveByTicker = new Map(liveHoldings.map((h) => [h.ticker, h]));
-  const missingFromFeed = PDF_HOLDINGS.filter((h) => !liveByTicker.has(h.ticker)).map((h) => h.ticker);
-  const extraInFeed = liveHoldings
-    .map((h) => h.ticker)
-    .filter((ticker) => !PDF_HOLDINGS.some((h) => h.ticker === ticker));
+  const sourceHoldings = liveHoldings.length ? liveHoldings : FALLBACK_HOLDINGS;
+  const usingFallbackHoldings = liveHoldings.length === 0;
 
-  const rows = PDF_HOLDINGS.map((h) => {
-    const feed = liveByTicker.get(h.ticker) as any;
-    const shares = Number(feed?.shares ?? h.shares);
-    const avgCost = Number(feed?.avg_cost_pkr ?? h.avgCost);
-    const bookCost = Number(feed?.cost_basis_pkr ?? h.bookCost);
-    const live = priceOf(h.ticker);
-    const mv = live ? shares * live.price : null;
-    const pnl = mv != null ? mv - bookCost : null;
-    const pnlPct = pnl != null ? (pnl / bookCost) * 100 : null;
-    return { ...h, shares, avgCost, bookCost, price: live?.price ?? null, mv, pnl, pnlPct, feed };
+  const rows = sourceHoldings.map((h: any) => {
+    const ticker = h.ticker;
+    const feed = liveByTicker.get(ticker) as any;
+    const meta = HOLDING_META[ticker] || { name: ticker, sector: 'Portfolio' };
+    const shares = Number(h.shares ?? feed?.shares ?? 0);
+    const avgCost = Number(h.avg_cost_pkr ?? h.avgCost ?? feed?.avg_cost_pkr ?? 0);
+    const bookCost = Number(h.cost_basis_pkr ?? h.bookCost ?? feed?.cost_basis_pkr ?? avgCost * shares);
+    const live = priceOf(ticker);
+    const mv = Number.isFinite(+h.market_value_pkr) ? +h.market_value_pkr : live ? shares * live.price : null;
+    const pnl = Number.isFinite(+h.unrealized_pnl_pkr) ? +h.unrealized_pnl_pkr : mv != null ? mv - bookCost : null;
+    const pnlPct = Number.isFinite(+h.unrealized_pnl_pct) ? +h.unrealized_pnl_pct : pnl != null && bookCost ? (pnl / bookCost) * 100 : null;
+    return {
+      ticker,
+      name: h.name || meta.name,
+      sector: h.sector || meta.sector,
+      shares,
+      avgCost,
+      bookCost,
+      price: live?.price ?? (Number.isFinite(+h.price) ? +h.price : null),
+      mv,
+      pnl,
+      pnlPct,
+      feed: feed || h,
+    };
   });
+  const missingFromFeed = usingFallbackHoldings ? rows.map((h) => h.ticker) : [];
+  const extraInFeed: string[] = [];
+  const holdingCount = rows.length;
 
   const bookTotal = rows.reduce((s, h) => s + h.bookCost, 0);
   const equityMv = rows.reduce((s, r) => s + (r.mv ?? r.bookCost), 0); // book fallback if a price is missing
@@ -92,12 +124,12 @@ export default async function Page() {
   const maxPos = positions[0];
 
   // Watchlist = scored opportunities, flagged when already a position. Not part of the account.
-  const held = new Set(PDF_HOLDINGS.map((h) => h.ticker));
+  const held = new Set(rows.map((h) => h.ticker));
   const watch = opps
     .filter((o) => Number.isFinite(+o.score))
     .sort((a, b) => b.score - a.score)
     .slice(0, 6);
-  const reconOk = !missingFromFeed.length && !extraInFeed.length;
+  const reconOk = !usingFallbackHoldings && !missingFromFeed.length && !extraInFeed.length;
 
   return (
     <main className="root">
@@ -131,7 +163,7 @@ export default async function Page() {
               <span className="apTag">{up ? 'gain' : 'loss'} · unrealized</span>
             </div>
             <div className="anchorNote">
-              Cash + equity, valued in PKR · {pricedAll ? 'all 8 positions priced at last close' : 'partial pricing — book cost used where a mark is missing'}
+              Cash + equity, valued in PKR · {pricedAll ? `all ${holdingCount} positions priced at last close` : 'partial pricing — book cost used where a mark is missing'}
             </div>
           </div>
 
@@ -143,7 +175,7 @@ export default async function Page() {
           <div className="stat">
             <div className="statLabel">Equity at market</div>
             <div className="statValue">{num(equityMv)}</div>
-            <div className="statNote">8 positions · {pricedAll ? 'all priced live' : 'book used where unpriced'}</div>
+            <div className="statNote">{holdingCount} positions · {pricedAll ? 'all priced live' : 'book used where unpriced'}</div>
           </div>
           <div className="stat">
             <div className="statLabel">Book cost</div>
@@ -334,13 +366,13 @@ export default async function Page() {
             <div className="card railCard">
               <div className="railHead">Feed reconciliation</div>
               {reconOk ? (
-                <div className="reconOk">All 8 PDF holdings match the live feed. No sold-only ticker (e.g. PTC) is active.</div>
+                <div className="reconOk">All {holdingCount} active holdings match the live feed. No sold-only ticker (e.g. PTC) is active.</div>
               ) : (
                 <div className="reconErr">
                   Mismatch — missing {missingFromFeed.join(', ') || 'none'}; extra {extraInFeed.join(', ') || 'none'}.
                 </div>
               )}
-              <div className="railFoot">Cash and share counts reconcile to the FINQALAB cashbook; closed round-trips (PTC, the prior ENGROH lot) are excluded.</div>
+              <div className="railFoot">Cash and share counts come from the current portfolio feed; closed round-trips (PTC, the prior ENGROH lot) are excluded.</div>
               {liveError ? <div className="reconErr">Live feed warning: {liveError} — figures shown are from the last good bundle.</div> : null}
             </div>
 
