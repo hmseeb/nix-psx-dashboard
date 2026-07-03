@@ -243,88 +243,67 @@ export default async function Page() {
               <h2>Holdings</h2>
               <span className="cardCap">cost basis from FINQALAB statement · mark from {isLive ? 'live feed' : 'last bundle'}</span>
             </div>
-            <div className="tableScroll">
-              <table className="tbl">
-                <thead>
-                  <tr>
-                    <th className="tL">Position</th>
-                    <th className="tR">Shares</th>
-                    <th className="tR">Avg cost</th>
-                    <th className="tR">Book cost</th>
-                    <th className="tR">Last price</th>
-                    <th className="tR">Market value</th>
-                    <th className="tR">Weight</th>
-                    <th className="tR">Unrealized P&amp;L</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rows.map((r) => {
-                    const rUp = (r.pnl ?? 0) >= 0;
-                    const value = r.mv ?? r.bookCost;
-                    const weight = account > 0 ? (value / account) * 100 : 0;
-                    return (
-                      <tr key={r.ticker}>
-                        <td className="tL">
-                          <div className="posTick">{r.ticker}</div>
-                          <div className="posName">{r.name} · {r.sector}</div>
-                        </td>
-                        <td className="tR n">{num(r.shares, 0)}</td>
-                        <td className="tR n">{num(r.avgCost, 4)}</td>
-                        <td className="tR n strong">{num(r.bookCost)}</td>
-                        <td className="tR n">{r.price == null ? '—' : num(r.price)}</td>
-                        <td className="tR n strong">
-                          {r.mv == null ? (
-                            <span>{num(r.bookCost)} <em className="fallbackMark">book fallback</em></span>
-                          ) : (
-                            num(r.mv)
-                          )}
-                        </td>
-                        <td className="tR n">{pct(weight)}</td>
-                        <td className="tR">
-                          {r.pnl == null ? (
-                            <span className="pend">awaiting mark</span>
-                          ) : (
-                            <span className={`pnl ${rUp ? 'pos' : 'neg'}`}>
-                              {rUp ? <ArrowUpRight size={13} /> : <ArrowDownRight size={13} />}
-                              {signed(r.pnl)} <em>{signed(r.pnlPct ?? 0)}%</em>
-                            </span>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-                <tfoot>
-                  <tr className="ftSub">
-                    <td className="tL">Equity subtotal</td>
-                    <td className="tR" />
-                    <td className="tR" />
-                    <td className="tR n strong">{num(bookTotal)}</td>
-                    <td className="tR" />
-                    <td className="tR n strong">{num(equityMv)}</td>
-                    <td className="tR n">{pct(account > 0 ? (equityMv / account) * 100 : 0)}</td>
-                    <td className="tR">
-                      <span className={`pnl ${up ? 'pos' : 'neg'}`}>
-                        {signed(unrealized)} <em>{signed(unrealizedPct)}%</em>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr className="ftCash">
-                    <td className="tL">Cash</td>
-                    <td className="tR" /><td className="tR" /><td className="tR" /><td className="tR" />
-                    <td className="tR n strong">{num(cash)}</td>
-                    <td className="tR n">{pct(cashWeight)}</td>
-                    <td className="tR muted">settled</td>
-                  </tr>
-                  <tr className="ftGrand">
-                    <td className="tL">Total account value</td>
-                    <td className="tR" /><td className="tR" /><td className="tR" /><td className="tR" />
-                    <td className="tR n grand">{num(account)}</td>
-                    <td className="tR n">100.0%</td>
-                    <td className="tR" />
-                  </tr>
-                </tfoot>
-              </table>
+            <div className="holdingsList">
+              <div className="holdingsHead" aria-hidden="true">
+                <span>Position</span>
+                <span>Shares / mark</span>
+                <span>Book cost</span>
+                <span>Market value</span>
+                <span>Unrealized P&amp;L</span>
+              </div>
+              {positions.map((r) => {
+                const rUp = (r.pnl ?? 0) >= 0;
+                return (
+                  <article className="holdingRow" key={r.ticker}>
+                    <div className="holdingIdentity">
+                      <div className="posTick">{r.ticker}</div>
+                      <div className="posName">{r.name} · {r.sector}</div>
+                    </div>
+                    <div className="holdingMetric compact">
+                      <span>Shares / mark</span>
+                      <b className="n">{num(r.shares, 0)} × {r.price == null ? '—' : num(r.price)}</b>
+                    </div>
+                    <div className="holdingMetric hideMobile">
+                      <span>Book cost</span>
+                      <b className="n">{num(r.bookCost)}</b>
+                    </div>
+                    <div className="holdingMetric">
+                      <span>Market value</span>
+                      <b className="n">{num(r.value)}</b>
+                      <em>{pct(r.weight)} of account</em>
+                    </div>
+                    <div className="holdingPnl">
+                      <span>Unrealized P&amp;L</span>
+                      {r.pnl == null ? (
+                        <b className="pend">awaiting mark</b>
+                      ) : (
+                        <b className={`pnl ${rUp ? 'pos' : 'neg'}`}>
+                          {rUp ? <ArrowUpRight size={13} /> : <ArrowDownRight size={13} />}
+                          {signed(r.pnl)} <em>{signed(r.pnlPct ?? 0)}%</em>
+                        </b>
+                      )}
+                    </div>
+                  </article>
+                );
+              })}
+              <div className="holdingSummary">
+                <div>
+                  <span>Equity subtotal</span>
+                  <b className="n">{num(equityMv)}</b>
+                </div>
+                <div>
+                  <span>Unrealized P&amp;L</span>
+                  <b className={`pnl ${up ? 'pos' : 'neg'}`}>{signed(unrealized)} <em>{signed(unrealizedPct)}%</em></b>
+                </div>
+                <div>
+                  <span>Cash</span>
+                  <b className="n">{num(cash)}</b>
+                </div>
+                <div>
+                  <span>Total account value</span>
+                  <b className="n grand">{num(account)}</b>
+                </div>
+              </div>
             </div>
           </div>
 

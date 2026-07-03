@@ -74,7 +74,9 @@ assert.match(page, /sourceHoldings = liveHoldings\.length \? liveHoldings : FALL
 assert.doesNotMatch(page, /const PDF_HOLDINGS|all 8 positions|8 positions|All 8 PDF holdings/, 'dashboard page must not hardcode the old 8-position cashbook snapshot');
 assert.match(page, /Total account value/, 'dashboard page must anchor on total account value');
 assert.match(page, /Allocation/, 'dashboard page must include the allocation breakdown');
-assert.match(page, /rows\.map/, 'dashboard page must render every holdings row');
+assert.match(page, /positions\.map/, 'dashboard page must render every holdings row from the live portfolio positions');
+assert.match(page, /holdingPnl|Unrealized P&amp;L/, 'dashboard page must show per-position unrealized P&L without relying on horizontal scrolling');
+assert.doesNotMatch(page, /tableScroll|<table className="tbl"/, 'dashboard holdings must not require horizontal table scrolling');
 assert.doesNotMatch(page, /taken down|system offline|automation: paused/i, 'dashboard page must not render takedown copy');
 assert.match(route, /getDashboardData/, 'api route must use getDashboardData');
 assert.match(route, /NextResponse\.json\(data/, 'api route must return dashboard data');
