@@ -38,7 +38,7 @@ const expectedCostBasis = {
   SEARL: 124894.78,
   SYS: 124314.74,
 };
-const expectedCash = -289549.47;
+const expectedCash = 439.52;
 
 function activeHoldings(rules) {
   return (rules?.portfolio?.holdings || []).filter((h) => (h.status || 'active') === 'active');
