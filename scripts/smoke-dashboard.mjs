@@ -5,6 +5,7 @@ import { join } from 'node:path';
 
 const root = process.cwd();
 const page = readFileSync(join(root, 'app/page.tsx'), 'utf8');
+const css = readFileSync(join(root, 'app/globals.css'), 'utf8');
 const route = readFileSync(join(root, 'app/api/dashboard/route.ts'), 'utf8');
 const live = JSON.parse(readFileSync(join(root, 'data/live-dashboard.json'), 'utf8'));
 const fallbackRules = JSON.parse(readFileSync(join(root, 'data/rules-output.json'), 'utf8'));
@@ -76,6 +77,8 @@ assert.match(page, /Total account value/, 'dashboard page must anchor on total a
 assert.match(page, /Allocation/, 'dashboard page must include the allocation breakdown');
 assert.match(page, /positions\.map/, 'dashboard page must render every holdings row from the live portfolio positions');
 assert.match(page, /holdingPnl|Unrealized P&amp;L/, 'dashboard page must show per-position unrealized P&L without relying on horizontal scrolling');
+assert.match(css, /\.pnl\.pos\s*\{\s*color:\s*var\(--pos\)/, 'profit P&L numbers must be green');
+assert.match(css, /\.pnl\.neg\s*\{\s*color:\s*var\(--neg\)/, 'loss P&L numbers must be red');
 assert.doesNotMatch(page, /tableScroll|<table className="tbl"/, 'dashboard holdings must not require horizontal table scrolling');
 assert.doesNotMatch(page, /taken down|system offline|automation: paused/i, 'dashboard page must not render takedown copy');
 assert.match(route, /getDashboardData/, 'api route must use getDashboardData');
