@@ -298,9 +298,9 @@
     ],
     "win_rate": 0.0
   },
-  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-07-06T03:51:14.084968Z\n- Recommendations tracked: 321\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 124\n- opportunity: 197\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
-  "published_at": "2026-07-06T03:51:14.174543+00:00",
-  "published_at_pkt": "2026-07-06T03:51:14.174543+00:00",
+  "performanceMd": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-07-07T03:51:21.619782Z\n- Recommendations tracked: 338\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 136\n- opportunity: 202\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n",
+  "published_at": "2026-07-07T03:51:21.690462+00:00",
+  "published_at_pkt": "2026-07-07T03:51:21.690462+00:00",
   "rules": {
     "audit_notes": [
       "deterministic rules-engine output; llm may explain but not change scores",
@@ -314,14 +314,14 @@
       "tickers_total": 13,
       "tickers_with_200d_history": 13
     },
-    "generated_at": "2026-07-06T03:51:13.999581+00:00",
-    "generated_at_pkt": "2026-07-06 08:51 PKT",
+    "generated_at": "2026-07-07T03:51:21.537768+00:00",
+    "generated_at_pkt": "2026-07-07 08:51 PKT",
     "market_regime": {
       "indices": {
         "KSE100": {
-          "change": 19.08,
-          "pct": 0.1,
-          "value": 185372.2
+          "change": 5.21,
+          "pct": 0.03,
+          "value": 187454.69
         }
       },
       "reasons": [
@@ -343,7 +343,7 @@
         },
         "buy_trigger": "oil-supported strength + no breakdown in broader market",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.843566Z",
+          "computed_at_utc": "2026-07-07T03:51:09.268931Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -353,15 +353,15 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 1.83,
+        "day_change_pct": 2.08,
         "execution_guard": {
           "action_capped": true,
           "notes": [
@@ -375,74 +375,18 @@
           "recent_execution": true
         },
         "indicator_source": "psx-indicators",
-        "price": 689.76,
+        "price": 704.1,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 78,
         "sector": "e&p",
         "setup": "energy cashflow + defensive macro hedge",
         "stop_method": "atr14",
-        "stop_pkr": 669.19,
-        "target_1_pkr": 720.61,
-        "target_2_pkr": 741.18,
+        "stop_pkr": 682.11,
+        "target_1_pkr": 737.09,
+        "target_2_pkr": 759.08,
         "ticker": "MARI",
-        "volume": 3683127.0
-      },
-      {
-        "action": "watch_small_add",
-        "breakdown": {
-          "catalyst_insider": 3,
-          "momentum": 20,
-          "quality_fundamentals": 20,
-          "sector_rotation": 15,
-          "valuation": 5,
-          "volume_accumulation": 10
-        },
-        "buy_trigger": "sector inflow confirmation and improving momentum",
-        "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.854380Z",
-          "enough_for_126d": true,
-          "enough_for_200d": true,
-          "enough_for_20d": true,
-          "enough_for_50d": true,
-          "enough_for_52w": true,
-          "enough_for_63d": true,
-          "enough_history": true,
-          "error": null,
-          "indicator_file": true,
-          "latest_date": "2026-07-06",
-          "missing_history_file": false,
-          "momentum_source": "psx-indicators",
-          "row_count": 1250,
-          "scoring_mode": "indicator_v2",
-          "volume_source": "psx-indicators"
-        },
-        "data_source": "psx",
-        "day_change_pct": 1.87,
-        "execution_guard": {
-          "action_capped": false,
-          "notes": [
-            "pending_recent_buy_recommendation: 495da0b0063f08006073 generated_at=2026-07-04T03:46:02.737211+00:00 has no matching later execution",
-            "recent_execution: b59af69a83e4911a buy qty=30 date=2026-07-03",
-            "pending_review: 1 unexecuted buy recommendation(s) for ticker"
-          ],
-          "original_action": "watch_small_add",
-          "pending_recent_buy_recommendation": true,
-          "recent_execution": true
-        },
-        "indicator_source": "psx-indicators",
-        "price": 345.43,
-        "rejected_reasons": [],
-        "risk_reward": "1:1.5 / 1:2.5",
-        "score": 73,
-        "sector": "e&p",
-        "setup": "large-cap energy beta",
-        "stop_method": "atr14",
-        "stop_pkr": 334.18,
-        "target_1_pkr": 362.3,
-        "target_2_pkr": 373.54,
-        "ticker": "OGDC",
-        "volume": 9309173.0
+        "volume": 2123033.0
       },
       {
         "action": "watch_small_add",
@@ -456,7 +400,7 @@
         },
         "buy_trigger": "rotation to defensive + acceptable valuation",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.829450Z",
+          "computed_at_utc": "2026-07-07T03:51:09.254692Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -466,15 +410,15 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.78,
+        "day_change_pct": 0.64,
         "execution_guard": {
           "action_capped": false,
           "notes": [
@@ -487,32 +431,32 @@
           "recent_execution": true
         },
         "indicator_source": "psx-indicators",
-        "price": 576.72,
+        "price": 580.41,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 71,
         "sector": "fertilizer",
         "setup": "defensive dividend profile",
         "stop_method": "atr14",
-        "stop_pkr": 556.45,
-        "target_1_pkr": 607.13,
-        "target_2_pkr": 627.4,
+        "stop_pkr": 560.04,
+        "target_1_pkr": 610.96,
+        "target_2_pkr": 631.32,
         "ticker": "FFC",
-        "volume": 1340806.0
+        "volume": 1223473.0
       },
       {
-        "action": "watch_only",
+        "action": "watch_small_add",
         "breakdown": {
           "catalyst_insider": 3,
           "momentum": 15,
           "quality_fundamentals": 10,
           "sector_rotation": 10,
           "valuation": 15,
-          "volume_accumulation": 10
+          "volume_accumulation": 15
         },
         "buy_trigger": "sustained steel sector inflow",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.836588Z",
+          "computed_at_utc": "2026-07-07T03:51:09.261857Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -522,51 +466,51 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 3.11,
+        "day_change_pct": 4.38,
         "execution_guard": {
           "action_capped": false,
           "notes": [
             "no pending or recent execution guard triggered"
           ],
-          "original_action": "watch_only",
+          "original_action": "watch_small_add",
           "pending_recent_buy_recommendation": false,
           "recent_execution": false
         },
         "indicator_source": "psx-indicators",
-        "price": 94.24,
+        "price": 98.37,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
-        "score": 63,
+        "score": 68,
         "sector": "steel",
         "setup": "high-beta industrial exposure",
         "stop_method": "atr14",
-        "stop_pkr": 85.72,
-        "target_1_pkr": 107.02,
-        "target_2_pkr": 115.53,
+        "stop_pkr": 89.23,
+        "target_1_pkr": 112.08,
+        "target_2_pkr": 121.22,
         "ticker": "ISL",
-        "volume": 1290515.0
+        "volume": 1879936.0
       },
       {
-        "action": "watch_only",
+        "action": "watch_small_add",
         "breakdown": {
-          "catalyst_insider": 6,
+          "catalyst_insider": 3,
           "momentum": 20,
           "quality_fundamentals": 20,
-          "sector_rotation": 10,
+          "sector_rotation": 15,
           "valuation": 5,
-          "volume_accumulation": 0
+          "volume_accumulation": 5
         },
-        "buy_trigger": "risk-off rotation and stable cashflow outlook",
+        "buy_trigger": "sector inflow confirmation and improving momentum",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.833047Z",
+          "computed_at_utc": "2026-07-07T03:51:09.279526Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -576,37 +520,39 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.46,
+        "day_change_pct": 0.95,
         "execution_guard": {
           "action_capped": false,
           "notes": [
-            "no pending or recent execution guard triggered"
+            "pending_recent_buy_recommendation: 495da0b0063f08006073 generated_at=2026-07-04T03:46:02.737211+00:00 has no matching later execution",
+            "recent_execution: b59af69a83e4911a buy qty=30 date=2026-07-03",
+            "pending_review: 1 unexecuted buy recommendation(s) for ticker"
           ],
-          "original_action": "watch_only",
-          "pending_recent_buy_recommendation": false,
-          "recent_execution": false
+          "original_action": "watch_small_add",
+          "pending_recent_buy_recommendation": true,
+          "recent_execution": true
         },
         "indicator_source": "psx-indicators",
-        "price": 233.61,
+        "price": 348.72,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
-        "score": 61,
-        "sector": "power",
-        "setup": "defensive utility exposure",
+        "score": 68,
+        "sector": "e&p",
+        "setup": "large-cap energy beta",
         "stop_method": "atr14",
-        "stop_pkr": 227.51,
-        "target_1_pkr": 242.76,
-        "target_2_pkr": 248.87,
-        "ticker": "HUBC",
-        "volume": 2328480.0
+        "stop_pkr": 337.1,
+        "target_1_pkr": 366.16,
+        "target_2_pkr": 377.78,
+        "ticker": "OGDC",
+        "volume": 6263980.0
       },
       {
         "action": "watch_only",
@@ -618,9 +564,9 @@
           "valuation": 15,
           "volume_accumulation": 5
         },
-        "buy_trigger": "risk-on regime + sector rotation inflow",
+        "buy_trigger": "breakout with volume and improving index breadth",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.840075Z",
+          "computed_at_utc": "2026-07-07T03:51:09.276034Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -630,15 +576,69 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1245,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.02,
+        "day_change_pct": 2.18,
+        "execution_guard": {
+          "action_capped": false,
+          "notes": [
+            "recent_execution: b81c17639783664b buy qty=597 date=2026-07-02"
+          ],
+          "original_action": "watch_only",
+          "pending_recent_buy_recommendation": false,
+          "recent_execution": true
+        },
+        "indicator_source": "psx-indicators",
+        "price": 109.51,
+        "rejected_reasons": [],
+        "risk_reward": "1:1.5 / 1:2.5",
+        "score": 58,
+        "sector": "cement",
+        "setup": "beta to construction cycle",
+        "stop_method": "atr14",
+        "stop_pkr": 104.06,
+        "target_1_pkr": 117.69,
+        "target_2_pkr": 123.14,
+        "ticker": "MLCF",
+        "volume": 19843892.0
+      },
+      {
+        "action": "watch_only",
+        "breakdown": {
+          "catalyst_insider": 6,
+          "momentum": 15,
+          "quality_fundamentals": 20,
+          "sector_rotation": 10,
+          "valuation": 5,
+          "volume_accumulation": 0
+        },
+        "buy_trigger": "risk-off rotation and stable cashflow outlook",
+        "data_quality": {
+          "computed_at_utc": "2026-07-07T03:51:09.258325Z",
+          "enough_for_126d": true,
+          "enough_for_200d": true,
+          "enough_for_20d": true,
+          "enough_for_50d": true,
+          "enough_for_52w": true,
+          "enough_for_63d": true,
+          "enough_history": true,
+          "error": null,
+          "indicator_file": true,
+          "latest_date": "2026-07-07",
+          "missing_history_file": false,
+          "momentum_source": "psx-indicators",
+          "row_count": 1251,
+          "scoring_mode": "indicator_v2",
+          "volume_source": "psx-indicators"
+        },
+        "data_source": "psx",
+        "day_change_pct": 0.87,
         "execution_guard": {
           "action_capped": false,
           "notes": [
@@ -649,18 +649,18 @@
           "recent_execution": false
         },
         "indicator_source": "psx-indicators",
-        "price": 480.12,
+        "price": 235.65,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
-        "score": 58,
-        "sector": "cement",
-        "setup": "cyclical risk-on proxy",
+        "score": 56,
+        "sector": "power",
+        "setup": "defensive utility exposure",
         "stop_method": "atr14",
-        "stop_pkr": 461.62,
-        "target_1_pkr": 507.87,
-        "target_2_pkr": 526.36,
-        "ticker": "LUCK",
-        "volume": 1155247.0
+        "stop_pkr": 229.26,
+        "target_1_pkr": 245.24,
+        "target_2_pkr": 251.63,
+        "ticker": "HUBC",
+        "volume": 3740322.0
       },
       {
         "action": "watch_only",
@@ -674,7 +674,7 @@
         },
         "buy_trigger": "pullback near support with stable volume",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.847299Z",
+          "computed_at_utc": "2026-07-07T03:51:09.272545Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -684,15 +684,15 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.64,
+        "day_change_pct": 1.95,
         "execution_guard": {
           "action_capped": false,
           "notes": [
@@ -703,18 +703,18 @@
           "recent_execution": false
         },
         "indicator_source": "psx-indicators",
-        "price": 555.94,
+        "price": 566.77,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 53,
         "sector": "islamic-banking",
         "setup": "quality islamic financial exposure",
         "stop_method": "atr14",
-        "stop_pkr": 536.45,
-        "target_1_pkr": 585.18,
-        "target_2_pkr": 604.67,
+        "stop_pkr": 545.52,
+        "target_1_pkr": 598.64,
+        "target_2_pkr": 619.89,
         "ticker": "MEBL",
-        "volume": 969134.0
+        "volume": 1856345.0
       },
       {
         "action": "watch_only",
@@ -722,13 +722,13 @@
           "catalyst_insider": 3,
           "momentum": 15,
           "quality_fundamentals": 10,
-          "sector_rotation": 5,
-          "valuation": 15,
+          "sector_rotation": 10,
+          "valuation": 10,
           "volume_accumulation": 5
         },
-        "buy_trigger": "breakout with volume and improving index breadth",
+        "buy_trigger": "risk-on regime + sector rotation inflow",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.850884Z",
+          "computed_at_utc": "2026-07-07T03:51:09.265406Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -738,37 +738,37 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1246,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.0,
+        "day_change_pct": 1.78,
         "execution_guard": {
           "action_capped": false,
           "notes": [
-            "recent_execution: b81c17639783664b buy qty=597 date=2026-07-02"
+            "no pending or recent execution guard triggered"
           ],
           "original_action": "watch_only",
           "pending_recent_buy_recommendation": false,
-          "recent_execution": true
+          "recent_execution": false
         },
         "indicator_source": "psx-indicators",
-        "price": 107.17,
+        "price": 488.66,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 53,
         "sector": "cement",
-        "setup": "beta to construction cycle",
+        "setup": "cyclical risk-on proxy",
         "stop_method": "atr14",
-        "stop_pkr": 101.74,
-        "target_1_pkr": 115.31,
-        "target_2_pkr": 120.74,
-        "ticker": "MLCF",
-        "volume": 7981696.0
+        "stop_pkr": 469.0,
+        "target_1_pkr": 518.15,
+        "target_2_pkr": 537.81,
+        "ticker": "LUCK",
+        "volume": 2184221.0
       },
       {
         "action": "avoid",
@@ -776,13 +776,13 @@
           "catalyst_insider": 3,
           "momentum": 0,
           "quality_fundamentals": 20,
-          "sector_rotation": 10,
+          "sector_rotation": 15,
           "valuation": 10,
-          "volume_accumulation": 5
+          "volume_accumulation": 0
         },
         "buy_trigger": "volume expansion with positive sector breadth",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.821554Z",
+          "computed_at_utc": "2026-07-07T03:51:09.247000Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -792,15 +792,15 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1250,
+          "row_count": 1251,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.0,
+        "day_change_pct": 0.56,
         "execution_guard": {
           "action_capped": false,
           "notes": [
@@ -811,18 +811,18 @@
           "recent_execution": true
         },
         "indicator_source": "psx-indicators",
-        "price": 197.32,
+        "price": 198.43,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 48,
         "sector": "fertilizer",
         "setup": "fertilizer momentum candidate",
         "stop_method": "atr14",
-        "stop_pkr": 193.3,
-        "target_1_pkr": 203.36,
-        "target_2_pkr": 207.38,
+        "stop_pkr": 194.25,
+        "target_1_pkr": 204.69,
+        "target_2_pkr": 208.87,
         "ticker": "EFERT",
-        "volume": 2553789.0
+        "volume": 1293185.0
       },
       {
         "action": "avoid",
@@ -836,7 +836,7 @@
         },
         "buy_trigger": "pullback entry with trend intact",
         "data_quality": {
-          "computed_at_utc": "2026-07-06T03:50:59.870148Z",
+          "computed_at_utc": "2026-07-07T03:51:09.289933Z",
           "enough_for_126d": true,
           "enough_for_200d": true,
           "enough_for_20d": true,
@@ -846,15 +846,15 @@
           "enough_history": true,
           "error": null,
           "indicator_file": true,
-          "latest_date": "2026-07-06",
+          "latest_date": "2026-07-07",
           "missing_history_file": false,
           "momentum_source": "psx-indicators",
-          "row_count": 1248,
+          "row_count": 1249,
           "scoring_mode": "indicator_v2",
           "volume_source": "psx-indicators"
         },
         "data_source": "psx",
-        "day_change_pct": 0.25,
+        "day_change_pct": 0.05,
         "execution_guard": {
           "action_capped": false,
           "notes": [
@@ -865,26 +865,26 @@
           "recent_execution": true
         },
         "indicator_source": "psx-indicators",
-        "price": 149.41,
+        "price": 149.48,
         "rejected_reasons": [],
         "risk_reward": "1:1.5 / 1:2.5",
         "score": 45,
         "sector": "tech",
         "setup": "earnings growth profile",
         "stop_method": "atr14",
-        "stop_pkr": 145.33,
-        "target_1_pkr": 155.53,
-        "target_2_pkr": 159.62,
+        "stop_pkr": 145.68,
+        "target_1_pkr": 155.18,
+        "target_2_pkr": 158.97,
         "ticker": "SYS",
-        "volume": 1276023.0
+        "volume": 1845753.0
       }
     ],
     "portfolio": {
-      "account_value_pkr": 1127428.59,
+      "account_value_pkr": 1143722.55,
       "as_of": "2026-07-03",
       "book_cost_pkr": 1190203.14,
       "cash_pkr": -79862.89,
-      "estimated_value_pkr": 1207291.48,
+      "estimated_value_pkr": 1223585.44,
       "funded_capital_pkr": 1110340.25,
       "holdings": [
         {
@@ -899,7 +899,7 @@
           },
           "cost_basis_pkr": 40004.68,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.821554Z",
+            "computed_at_utc": "2026-07-07T03:51:09.247000Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -909,25 +909,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 39464.0,
-          "portfolio_weight_pct": 3.27,
-          "price": 197.32,
+          "market_value_pkr": 39686.0,
+          "portfolio_weight_pct": 3.24,
+          "price": 198.43,
           "risk_action": "trim",
           "risk_score": 50,
           "shares": 200.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "EFERT",
-          "unrealized_pnl_pct": -1.35,
-          "unrealized_pnl_pkr": -540.68
+          "unrealized_pnl_pct": -0.8,
+          "unrealized_pnl_pkr": -318.68
         },
         {
           "avg_cost_pkr": 283.6131,
@@ -941,7 +941,7 @@
           },
           "cost_basis_pkr": 72321.33,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.825801Z",
+            "computed_at_utc": "2026-07-07T03:51:09.251121Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -951,25 +951,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1233,
+            "row_count": 1234,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 74447.25,
-          "portfolio_weight_pct": 6.17,
-          "price": 291.95,
+          "market_value_pkr": 74926.65,
+          "portfolio_weight_pct": 6.12,
+          "price": 293.83,
           "risk_action": "safe_hold",
           "risk_score": 0,
           "shares": 255.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "ENGROH",
-          "unrealized_pnl_pct": 2.94,
-          "unrealized_pnl_pkr": 2125.92
+          "unrealized_pnl_pct": 3.6,
+          "unrealized_pnl_pkr": 2605.32
         },
         {
           "avg_cost_pkr": 570.7564,
@@ -983,7 +983,7 @@
           },
           "cost_basis_pkr": 192915.66,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.829450Z",
+            "computed_at_utc": "2026-07-07T03:51:09.254692Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -993,31 +993,31 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 194931.36000000002,
-          "portfolio_weight_pct": 16.15,
-          "price": 576.72,
+          "market_value_pkr": 196178.58,
+          "portfolio_weight_pct": 16.03,
+          "price": 580.41,
           "risk_action": "safe_hold",
           "risk_score": 18,
           "shares": 338.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "FFC",
-          "unrealized_pnl_pct": 1.04,
-          "unrealized_pnl_pkr": 2015.7
+          "unrealized_pnl_pct": 1.69,
+          "unrealized_pnl_pkr": 3262.92
         },
         {
           "avg_cost_pkr": 235.455,
           "breakdown": {
             "concentration_risk": 0,
-            "drawdown_risk": 5,
+            "drawdown_risk": 0,
             "fundamental_news_risk": 0,
             "price_risk": 0,
             "sector_macro_risk": 0,
@@ -1025,7 +1025,7 @@
           },
           "cost_basis_pkr": 72991.05,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.833047Z",
+            "computed_at_utc": "2026-07-07T03:51:09.258325Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1035,25 +1035,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 72419.1,
-          "portfolio_weight_pct": 6.0,
-          "price": 233.61,
+          "market_value_pkr": 73051.5,
+          "portfolio_weight_pct": 5.97,
+          "price": 235.65,
           "risk_action": "safe_hold",
-          "risk_score": 13,
+          "risk_score": 8,
           "shares": 310.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "HUBC",
-          "unrealized_pnl_pct": -0.78,
-          "unrealized_pnl_pkr": -571.95
+          "unrealized_pnl_pct": 0.08,
+          "unrealized_pnl_pkr": 60.45
         },
         {
           "avg_cost_pkr": 468.5826,
@@ -1067,7 +1067,7 @@
           },
           "cost_basis_pkr": 110585.5,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.840075Z",
+            "computed_at_utc": "2026-07-07T03:51:09.265406Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1077,25 +1077,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1245,
+            "row_count": 1246,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 113308.32,
-          "portfolio_weight_pct": 9.39,
-          "price": 480.12,
+          "market_value_pkr": 115323.76000000001,
+          "portfolio_weight_pct": 9.43,
+          "price": 488.66,
           "risk_action": "safe_hold",
           "risk_score": 5,
           "shares": 236.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "LUCK",
-          "unrealized_pnl_pct": 2.46,
-          "unrealized_pnl_pkr": 2722.82
+          "unrealized_pnl_pct": 4.28,
+          "unrealized_pnl_pkr": 4738.26
         },
         {
           "avg_cost_pkr": 679.5392,
@@ -1109,7 +1109,7 @@
           },
           "cost_basis_pkr": 104649.03,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.843566Z",
+            "computed_at_utc": "2026-07-07T03:51:09.268931Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1119,25 +1119,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 106223.04,
-          "portfolio_weight_pct": 8.8,
-          "price": 689.76,
+          "market_value_pkr": 108431.40000000001,
+          "portfolio_weight_pct": 8.86,
+          "price": 704.1,
           "risk_action": "safe_hold",
           "risk_score": 10,
           "shares": 154.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "MARI",
-          "unrealized_pnl_pct": 1.5,
-          "unrealized_pnl_pkr": 1574.01
+          "unrealized_pnl_pct": 3.61,
+          "unrealized_pnl_pkr": 3782.37
         },
         {
           "avg_cost_pkr": 515.7073,
@@ -1151,7 +1151,7 @@
           },
           "cost_basis_pkr": 111908.48,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.847299Z",
+            "computed_at_utc": "2026-07-07T03:51:09.272545Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1161,25 +1161,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 120638.98000000001,
-          "portfolio_weight_pct": 9.99,
-          "price": 555.94,
+          "market_value_pkr": 122989.09,
+          "portfolio_weight_pct": 10.05,
+          "price": 566.77,
           "risk_action": "safe_hold",
           "risk_score": 8,
           "shares": 217.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "MEBL",
-          "unrealized_pnl_pct": 7.8,
-          "unrealized_pnl_pkr": 8730.5
+          "unrealized_pnl_pct": 9.9,
+          "unrealized_pnl_pkr": 11080.61
         },
         {
           "avg_cost_pkr": 108.9323,
@@ -1193,7 +1193,7 @@
           },
           "cost_basis_pkr": 65032.57,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.850884Z",
+            "computed_at_utc": "2026-07-07T03:51:09.276034Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1203,25 +1203,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 63980.49,
-          "portfolio_weight_pct": 5.3,
-          "price": 107.17,
+          "market_value_pkr": 65377.47,
+          "portfolio_weight_pct": 5.34,
+          "price": 109.51,
           "risk_action": "safe_hold",
           "risk_score": 15,
           "shares": 597.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "MLCF",
-          "unrealized_pnl_pct": -1.62,
-          "unrealized_pnl_pkr": -1052.08
+          "unrealized_pnl_pct": 0.53,
+          "unrealized_pnl_pkr": 344.9
         },
         {
           "avg_cost_pkr": 340.0799,
@@ -1235,7 +1235,7 @@
           },
           "cost_basis_pkr": 130590.67,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.854380Z",
+            "computed_at_utc": "2026-07-07T03:51:09.279526Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1245,25 +1245,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 132645.12,
-          "portfolio_weight_pct": 10.99,
-          "price": 345.43,
+          "market_value_pkr": 133908.48,
+          "portfolio_weight_pct": 10.94,
+          "price": 348.72,
           "risk_action": "safe_hold",
           "risk_score": 0,
           "shares": 384.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "OGDC",
-          "unrealized_pnl_pct": 1.57,
-          "unrealized_pnl_pkr": 2054.45
+          "unrealized_pnl_pct": 2.54,
+          "unrealized_pnl_pkr": 3317.81
         },
         {
           "avg_cost_pkr": 249.9666,
@@ -1277,7 +1277,7 @@
           },
           "cost_basis_pkr": 39994.65,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.859315Z",
+            "computed_at_utc": "2026-07-07T03:51:09.283007Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1287,25 +1287,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 39793.6,
+          "market_value_pkr": 40425.6,
           "portfolio_weight_pct": 3.3,
-          "price": 248.71,
+          "price": 252.66,
           "risk_action": "safe_hold",
           "risk_score": 10,
           "shares": 160.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "PPL",
-          "unrealized_pnl_pct": -0.5,
-          "unrealized_pnl_pkr": -201.05
+          "unrealized_pnl_pct": 1.08,
+          "unrealized_pnl_pkr": 430.95
         },
         {
           "avg_cost_pkr": 94.2602,
@@ -1319,7 +1319,7 @@
           },
           "cost_basis_pkr": 124894.78,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.864589Z",
+            "computed_at_utc": "2026-07-07T03:51:09.286515Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1329,25 +1329,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1250,
+            "row_count": 1251,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 127372.25,
-          "portfolio_weight_pct": 10.55,
-          "price": 96.13,
+          "market_value_pkr": 131161.75,
+          "portfolio_weight_pct": 10.72,
+          "price": 98.99,
           "risk_action": "watch",
           "risk_score": 30,
           "shares": 1325.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "SEARL",
-          "unrealized_pnl_pct": 1.98,
-          "unrealized_pnl_pkr": 2477.47
+          "unrealized_pnl_pct": 5.02,
+          "unrealized_pnl_pkr": 6266.97
         },
         {
           "avg_cost_pkr": 152.16,
@@ -1361,7 +1361,7 @@
           },
           "cost_basis_pkr": 124314.74,
           "data_quality": {
-            "computed_at_utc": "2026-07-06T03:50:59.870148Z",
+            "computed_at_utc": "2026-07-07T03:51:09.289933Z",
             "enough_for_126d": true,
             "enough_for_200d": true,
             "enough_for_20d": true,
@@ -1371,25 +1371,25 @@
             "enough_history": true,
             "error": null,
             "indicator_file": true,
-            "latest_date": "2026-07-06",
+            "latest_date": "2026-07-07",
             "missing_history_file": false,
             "risk_source": "psx-indicators",
-            "row_count": 1248,
+            "row_count": 1249,
             "scoring_mode": "indicator_v2"
           },
           "data_source": "psx",
           "indicator_source": "psx-indicators",
-          "market_value_pkr": 122067.97,
-          "portfolio_weight_pct": 10.11,
-          "price": 149.41,
+          "market_value_pkr": 122125.15999999999,
+          "portfolio_weight_pct": 9.98,
+          "price": 149.48,
           "risk_action": "watch",
           "risk_score": 32,
           "shares": 817.0,
           "source": "automated email/pdf ingestion",
           "status": "active",
           "ticker": "SYS",
-          "unrealized_pnl_pct": -1.81,
-          "unrealized_pnl_pkr": -2246.77
+          "unrealized_pnl_pct": -1.76,
+          "unrealized_pnl_pkr": -2189.58
         }
       ],
       "sold_positions": [
@@ -1403,8 +1403,8 @@
         }
       ],
       "source": "/data/.hermes/finance/psx-portfolio.yaml",
-      "unrealized_pnl_pct": 1.44,
-      "unrealized_pnl_pkr": 17088.34
+      "unrealized_pnl_pct": 2.8,
+      "unrealized_pnl_pkr": 33382.3
     },
     "rejects": [],
     "rules_name": "nix-psx-rules-engine",
@@ -1417,7 +1417,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": ".41,\n      \"day_change_pct\": 0.25,\n      \"volume\": 1276023.0,\n      \"score\": 45,\n      \"action\": \"avoid\",\n      \"breakdown\": {\n        \"momentum\": 0,\n        \"volume_accumulation\": 5,\n        \"sector_rotation\": 15,\n        \"quality_fundamentals\": 10,\n        \"valuation\": 15,\n        \"catalyst_insider\": 0\n      },\n      \"rejected_reasons\": [],\n      \"setup\": \"earnings growth profile\",\n      \"buy_trigger\": \"pullback entry with trend intact\",\n      \"data_source\": \"psx\",\n      \"indicator_source\": \"psx-indicators\",\n      \"data_quality\": {\n        \"indicator_file\": true,\n        \"row_count\": 1248,\n        \"latest_date\": \"2026-07-06\",\n        \"computed_at_utc\": \"2026-07-06T03:50:59.870148Z\",\n        \"enough_history\": true,\n        \"enough_for_20d\": true,\n        \"enough_for_50d\": true,\n        \"enough_for_63d\": true,\n        \"enough_for_126d\": true,\n        \"enough_for_200d\": true,\n        \"enough_for_52w\": true,\n        \"missing_history_file\": false,\n        \"error\": null,\n        \"scoring_mode\": \"indicator_v2\",\n        \"momentum_source\": \"psx-indicators\",\n        \"volume_source\": \"psx-indicators\"\n      },\n      \"execution_guard\": {\n        \"pending_recent_buy_recommendation\": false,\n        \"recent_execution\": true,\n        \"action_capped\": false,\n        \"original_action\": \"avoid\",\n        \"notes\": [\n          \"recent_execution: 2c2f5d5064dd0436 buy qty=560 date=2026-06-24\"\n        ]\n      },\n      \"stop_pkr\": 145.33,\n      \"target_1_pkr\": 155.53,\n      \"target_2_pkr\": 159.62,\n      \"risk_reward\": \"1:1.5 / 1:2.5\",\n      \"stop_method\": \"atr14\"\n    }\n  ],\n  \"rejects\": [],\n  \"audit_notes\": [\n    \"deterministic rules-engine output; llm may explain but not change scores\",\n    \"unknown/unavailable factor inputs score zero or conservative baseline, never max conviction\",\n    \"portfolio source of truth is /data/.hermes/finance/psx-portfolio.yaml\",\n    \"sold positions in portfolio yaml, including ENGROH and PTC/PTCL, must not appear as active unless a new buy is recorded\"\n  ]\n}\n"
+      "stdout": ".48,\n      \"day_change_pct\": 0.05,\n      \"volume\": 1845753.0,\n      \"score\": 45,\n      \"action\": \"avoid\",\n      \"breakdown\": {\n        \"momentum\": 0,\n        \"volume_accumulation\": 5,\n        \"sector_rotation\": 15,\n        \"quality_fundamentals\": 10,\n        \"valuation\": 15,\n        \"catalyst_insider\": 0\n      },\n      \"rejected_reasons\": [],\n      \"setup\": \"earnings growth profile\",\n      \"buy_trigger\": \"pullback entry with trend intact\",\n      \"data_source\": \"psx\",\n      \"indicator_source\": \"psx-indicators\",\n      \"data_quality\": {\n        \"indicator_file\": true,\n        \"row_count\": 1249,\n        \"latest_date\": \"2026-07-07\",\n        \"computed_at_utc\": \"2026-07-07T03:51:09.289933Z\",\n        \"enough_history\": true,\n        \"enough_for_20d\": true,\n        \"enough_for_50d\": true,\n        \"enough_for_63d\": true,\n        \"enough_for_126d\": true,\n        \"enough_for_200d\": true,\n        \"enough_for_52w\": true,\n        \"missing_history_file\": false,\n        \"error\": null,\n        \"scoring_mode\": \"indicator_v2\",\n        \"momentum_source\": \"psx-indicators\",\n        \"volume_source\": \"psx-indicators\"\n      },\n      \"execution_guard\": {\n        \"pending_recent_buy_recommendation\": false,\n        \"recent_execution\": true,\n        \"action_capped\": false,\n        \"original_action\": \"avoid\",\n        \"notes\": [\n          \"recent_execution: 2c2f5d5064dd0436 buy qty=560 date=2026-06-24\"\n        ]\n      },\n      \"stop_pkr\": 145.68,\n      \"target_1_pkr\": 155.18,\n      \"target_2_pkr\": 158.97,\n      \"risk_reward\": \"1:1.5 / 1:2.5\",\n      \"stop_method\": \"atr14\"\n    }\n  ],\n  \"rejects\": [],\n  \"audit_notes\": [\n    \"deterministic rules-engine output; llm may explain but not change scores\",\n    \"unknown/unavailable factor inputs score zero or conservative baseline, never max conviction\",\n    \"portfolio source of truth is /data/.hermes/finance/psx-portfolio.yaml\",\n    \"sold positions in portfolio yaml, including ENGROH and PTC/PTCL, must not appear as active unless a new buy is recorded\"\n  ]\n}\n"
     },
     {
       "cmd": [
@@ -1435,7 +1435,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-07-06T03:51:14.084968Z\n- Recommendations tracked: 321\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 124\n- opportunity: 197\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 321; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
+      "stdout": "# PSX Weekly Performance Dashboard\n\n- Generated UTC: 2026-07-07T03:51:21.619782Z\n- Recommendations tracked: 338\n- Ledger: `/data/.hermes/finance/psx-recommendation-ledger.jsonl`\n- Backtest: `/data/.hermes/finance/psx-backtest/latest.json`\n\n## Recommendation Count\n- holding_risk: 136\n- opportunity: 202\n\n## 7D / 30D / 90D Win Rate\n- D 7: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- D 30: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- D 90: pending 338; no mature outcomes yet, so no win-rate conclusion.\n- Pending/immature outcomes are reported but excluded from win-rate conclusions.\n\n## Average Return by Action\n- No evaluated action returns yet.\n\n## Average Excess Return vs KMI30\n- n/a: KMI30 benchmark outcomes are pending or unavailable; no fake excess-return conclusion.\n\n## Best and Worst Tickers\n### Best Tickers\n- No evaluated ticker returns yet.\n### Worst Tickers\n- No evaluated ticker returns yet.\n\n## Best and Worst Sectors\n### Best Sectors\n- No evaluated sector returns yet.\n### Worst Sectors\n- No evaluated sector returns yet.\n\n## Signals That Worked\n- No mature signal evidence yet.\n\n## Signals That Failed\n- No mature signal evidence yet.\n\n## Latest Backtest\n- Period: 2025-01-01 to 2026-05-25\n- Universe: FFC, HUBC, OGDC\n- Total return: 0.00%\n- Win rate: 0.00%\n- Max drawdown: 0.00%\n- Trades: 17\n- Mode: limited_current_scores_no_point_in_time_history\n- Caveat: backtest is limited; point-in-time scoring and/or sufficient price/benchmark history is unavailable.\n- Data note: Uses current rules output for selection; historical point-in-time scoring is not yet available.\n\n"
     },
     {
       "cmd": [
@@ -1443,7 +1443,7 @@
       ],
       "exit_code": 0,
       "stderr": "",
-      "stdout": "     \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-07-06T03:51:14.158929Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 321,\n      \"recommendation_count_by_action\": {\n        \"buy\": 13,\n        \"hold_only\": 37,\n        \"safe_hold\": 98,\n        \"trim\": 4,\n        \"watch\": 22,\n        \"watch_only\": 40,\n        \"watch_small_add\": 107\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 124,\n        \"opportunity\": 197\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 321,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 321,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 321,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
+      "stdout": "    \"best_tickers\": [],\n      \"generated_at_utc\": \"2026-07-07T03:51:21.678237Z\",\n      \"ledger_path\": \"/data/.hermes/finance/psx-recommendation-ledger.jsonl\",\n      \"recommendation_count\": 338,\n      \"recommendation_count_by_action\": {\n        \"buy\": 13,\n        \"hold_only\": 37,\n        \"safe_hold\": 107,\n        \"trim\": 5,\n        \"watch\": 24,\n        \"watch_only\": 41,\n        \"watch_small_add\": 111\n      },\n      \"recommendation_count_by_type\": {\n        \"holding_risk\": 136,\n        \"opportunity\": 202\n      },\n      \"signals_that_failed\": [],\n      \"signals_that_worked\": [],\n      \"window_performance\": {\n        \"d30\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 338,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d7\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 338,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        },\n        \"d90\": {\n          \"avg_return_pct\": null,\n          \"evaluated\": 0,\n          \"losses\": 0,\n          \"neutral\": 0,\n          \"note\": \"pending/immature outcomes excluded from win-rate denominator\",\n          \"pending\": 338,\n          \"win_rate_pct\": null,\n          \"wins\": 0\n        }\n      },\n      \"worst_sectors\": [],\n      \"worst_tickers\": []\n    }\n  },\n  \"suggested_weight_changes\": [\n    {\n      \"proposal\": \"do not change factor weights yet\",\n      \"reason\": \"fewer than 10 matured outcome windows; sample too small\",\n      \"needs_human_review\": true\n    }\n  ],\n  \"guardrails\": [\n    \"weekly review is diagnostic, not a live trade recommendation\",\n    \"rule weight changes are proposals only and require human review\",\n    \"do not auto-patch scoring weights from this report\"\n  ]\n}\n"
     }
   ],
   "schema_version": 1,
@@ -1546,8 +1546,8 @@
       "failed": {},
       "worked": {}
     },
-    "generated_at": "2026-07-06T03:51:14.116833+00:00",
-    "generated_at_pkt": "2026-07-06 08:51 PKT",
+    "generated_at": "2026-07-07T03:51:21.648523+00:00",
+    "generated_at_pkt": "2026-07-07 08:51 PKT",
     "guardrails": [
       "weekly review is diagnostic, not a live trade recommendation",
       "rule weight changes are proposals only and require human review",
@@ -1855,9 +1855,9 @@
     "latest_market_regime": {
       "indices": {
         "KSE100": {
-          "change": 19.08,
-          "pct": 0.1,
-          "value": 185372.2
+          "change": 5.21,
+          "pct": 0.03,
+          "value": 187454.69
         }
       },
       "reasons": [
@@ -1926,21 +1926,21 @@
         "backtest_path": "/data/.hermes/finance/psx-backtest/latest.json",
         "best_sectors": [],
         "best_tickers": [],
-        "generated_at_utc": "2026-07-06T03:51:14.158929Z",
+        "generated_at_utc": "2026-07-07T03:51:21.678237Z",
         "ledger_path": "/data/.hermes/finance/psx-recommendation-ledger.jsonl",
-        "recommendation_count": 321,
+        "recommendation_count": 338,
         "recommendation_count_by_action": {
           "buy": 13,
           "hold_only": 37,
-          "safe_hold": 98,
-          "trim": 4,
-          "watch": 22,
-          "watch_only": 40,
-          "watch_small_add": 107
+          "safe_hold": 107,
+          "trim": 5,
+          "watch": 24,
+          "watch_only": 41,
+          "watch_small_add": 111
         },
         "recommendation_count_by_type": {
-          "holding_risk": 124,
-          "opportunity": 197
+          "holding_risk": 136,
+          "opportunity": 202
         },
         "signals_that_failed": [],
         "signals_that_worked": [],
@@ -1951,7 +1951,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 321,
+            "pending": 338,
             "win_rate_pct": null,
             "wins": 0
           },
@@ -1961,7 +1961,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 321,
+            "pending": 338,
             "win_rate_pct": null,
             "wins": 0
           },
@@ -1971,7 +1971,7 @@
             "losses": 0,
             "neutral": 0,
             "note": "pending/immature outcomes excluded from win-rate denominator",
-            "pending": 321,
+            "pending": 338,
             "win_rate_pct": null,
             "wins": 0
           }
@@ -1982,710 +1982,11 @@
     },
     "period": {
       "days": 7,
-      "since_utc": "2026-06-29T03:51:14.116833+00:00"
+      "since_utc": "2026-06-30T03:51:21.648523+00:00"
     },
     "recommendations_last_7d": {
-      "count": 110,
+      "count": 114,
       "items": [
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 10,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 249.9666,
-            "portfolio_weight_pct": 3.3,
-            "shares": 160.0
-          },
-          "price_pkr": 248.71,
-          "recommendation_id": "a1be2e82475d5f994485",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 10,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "PPL",
-          "trigger": null
-        },
-        {
-          "action": "watch",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 20,
-            "fundamental_news_risk": 0,
-            "price_risk": 10,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 94.2602,
-            "portfolio_weight_pct": 10.55,
-            "shares": 1325.0
-          },
-          "price_pkr": 96.13,
-          "recommendation_id": "2b3f03fd9a24557d6699",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 30,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action watch from deterministic risk score",
-          "ticker": "SEARL",
-          "trigger": null
-        },
-        {
-          "action": "watch",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 10,
-            "fundamental_news_risk": 0,
-            "price_risk": 22,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 152.16,
-            "portfolio_weight_pct": 10.11,
-            "shares": 817.0
-          },
-          "price_pkr": 149.41,
-          "recommendation_id": "b3d4d48578f6cb424f3b",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 32,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action watch from deterministic risk score",
-          "ticker": "SYS",
-          "trigger": null
-        },
-        {
-          "action": "watch_small_add",
-          "breakdown": {
-            "catalyst_insider": 3,
-            "momentum": 15,
-            "quality_fundamentals": 20,
-            "sector_rotation": 15,
-            "valuation": 15,
-            "volume_accumulation": 10
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 689.76,
-          "recommendation_id": "d8cb2aa17d2d2e576526",
-          "recommendation_type": "opportunity",
-          "risk_reward": "1:1.5 / 1:2.5",
-          "score": 78,
-          "score_type": "opportunity",
-          "sector": "e&p",
-          "source_job": "rules_engine",
-          "stop_method": "atr14",
-          "stop_pkr": 671.33,
-          "target_1_pkr": 717.4,
-          "target_2_pkr": 735.83,
-          "target_pkr": 717.4,
-          "thesis": "energy cashflow + defensive macro hedge",
-          "ticker": "MARI",
-          "trigger": "oil-supported strength + no breakdown in broader market"
-        },
-        {
-          "action": "watch_small_add",
-          "breakdown": {
-            "catalyst_insider": 3,
-            "momentum": 20,
-            "quality_fundamentals": 20,
-            "sector_rotation": 15,
-            "valuation": 5,
-            "volume_accumulation": 10
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 345.43,
-          "recommendation_id": "43eed64e8f000c882a6f",
-          "recommendation_type": "opportunity",
-          "risk_reward": "1:1.5 / 1:2.5",
-          "score": 73,
-          "score_type": "opportunity",
-          "sector": "e&p",
-          "source_job": "rules_engine",
-          "stop_method": "atr14",
-          "stop_pkr": 335.25,
-          "target_1_pkr": 360.71,
-          "target_2_pkr": 370.89,
-          "target_pkr": 360.71,
-          "thesis": "large-cap energy beta",
-          "ticker": "OGDC",
-          "trigger": "sector inflow confirmation and improving momentum"
-        },
-        {
-          "action": "watch_small_add",
-          "breakdown": {
-            "catalyst_insider": 6,
-            "momentum": 15,
-            "quality_fundamentals": 20,
-            "sector_rotation": 15,
-            "valuation": 15,
-            "volume_accumulation": 0
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 576.72,
-          "recommendation_id": "6093b1aab0d9962110cc",
-          "recommendation_type": "opportunity",
-          "risk_reward": "1:1.5 / 1:2.5",
-          "score": 71,
-          "score_type": "opportunity",
-          "sector": "fertilizer",
-          "source_job": "rules_engine",
-          "stop_method": "atr14",
-          "stop_pkr": 556.84,
-          "target_1_pkr": 606.53,
-          "target_2_pkr": 626.41,
-          "target_pkr": 606.53,
-          "thesis": "defensive dividend profile",
-          "ticker": "FFC",
-          "trigger": "rotation to defensive + acceptable valuation"
-        },
-        {
-          "action": "watch_only",
-          "breakdown": {
-            "catalyst_insider": 3,
-            "momentum": 15,
-            "quality_fundamentals": 10,
-            "sector_rotation": 10,
-            "valuation": 15,
-            "volume_accumulation": 10
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 94.24,
-          "recommendation_id": "a40b060649313c1b6786",
-          "recommendation_type": "opportunity",
-          "risk_reward": "1:1.5 / 1:2.5",
-          "score": 63,
-          "score_type": "opportunity",
-          "sector": "steel",
-          "source_job": "rules_engine",
-          "stop_method": "atr14",
-          "stop_pkr": 86.07,
-          "target_1_pkr": 106.49,
-          "target_2_pkr": 114.66,
-          "target_pkr": 106.49,
-          "thesis": "high-beta industrial exposure",
-          "ticker": "ISL",
-          "trigger": "sustained steel sector inflow"
-        },
-        {
-          "action": "watch_only",
-          "breakdown": {
-            "catalyst_insider": 6,
-            "momentum": 20,
-            "quality_fundamentals": 20,
-            "sector_rotation": 10,
-            "valuation": 5,
-            "volume_accumulation": 0
-          },
-          "generated_at": "2026-07-05T03:46:11.137438+00:00",
-          "generated_at_pkt": "2026-07-05 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 42,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": false
-          },
-          "price_pkr": 233.61,
-          "recommendation_id": "f27293742a0231016d7e",
-          "recommendation_type": "opportunity",
-          "risk_reward": "1:1.5 / 1:2.5",
-          "score": 61,
-          "score_type": "opportunity",
-          "sector": "power",
-          "source_job": "rules_engine",
-          "stop_method": "atr14",
-          "stop_pkr": 227.37,
-          "target_1_pkr": 242.98,
-          "target_2_pkr": 249.22,
-          "target_pkr": 242.98,
-          "thesis": "defensive utility exposure",
-          "ticker": "HUBC",
-          "trigger": "risk-off rotation and stable cashflow outlook"
-        },
-        {
-          "action": "trim",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 20,
-            "fundamental_news_risk": 0,
-            "price_risk": 22,
-            "sector_macro_risk": 0,
-            "sell_pressure": 8
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 200.0234,
-            "portfolio_weight_pct": 3.27,
-            "shares": 200.0
-          },
-          "price_pkr": 197.32,
-          "recommendation_id": "c6fe0a7e64e40ac94d8c",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 50,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action trim from deterministic risk score",
-          "ticker": "EFERT",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 0,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 283.6131,
-            "portfolio_weight_pct": 6.17,
-            "shares": 255.0
-          },
-          "price_pkr": 291.95,
-          "recommendation_id": "b32a827813bdbd54dbae",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 0,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "ENGROH",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 10,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 8
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 570.7564,
-            "portfolio_weight_pct": 16.15,
-            "shares": 338.0
-          },
-          "price_pkr": 576.72,
-          "recommendation_id": "81be236c240c911e2cce",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 18,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "FFC",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 5,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 8
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 235.455,
-            "portfolio_weight_pct": 6.0,
-            "shares": 310.0
-          },
-          "price_pkr": 233.61,
-          "recommendation_id": "e8c0e88e9d213faf5e82",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 13,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "HUBC",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 5,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 468.5826,
-            "portfolio_weight_pct": 9.39,
-            "shares": 236.0
-          },
-          "price_pkr": 480.12,
-          "recommendation_id": "ff7c63b03232083d747b",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 5,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "LUCK",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 10,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 679.5392,
-            "portfolio_weight_pct": 8.8,
-            "shares": 154.0
-          },
-          "price_pkr": 689.76,
-          "recommendation_id": "d95192223ee8c8edc678",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 10,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "MARI",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 0,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 8
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 515.7073,
-            "portfolio_weight_pct": 9.99,
-            "shares": 217.0
-          },
-          "price_pkr": 555.94,
-          "recommendation_id": "e2cc7973026eed99bfd9",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 8,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "MEBL",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 15,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 108.9323,
-            "portfolio_weight_pct": 5.3,
-            "shares": 597.0
-          },
-          "price_pkr": 107.17,
-          "recommendation_id": "d15ddb21ab16dfab1038",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 15,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "MLCF",
-          "trigger": null
-        },
-        {
-          "action": "safe_hold",
-          "breakdown": {
-            "concentration_risk": 0,
-            "drawdown_risk": 0,
-            "fundamental_news_risk": 0,
-            "price_risk": 0,
-            "sector_macro_risk": 0,
-            "sell_pressure": 0
-          },
-          "generated_at": "2026-07-06T03:46:11.278294+00:00",
-          "generated_at_pkt": "2026-07-06 08:46 PKT",
-          "market_regime": "neutral",
-          "market_regime_score": 50,
-          "outcome_windows": {
-            "d30": null,
-            "d7": null,
-            "d90": null
-          },
-          "portfolio_context": {
-            "active_holding": true,
-            "avg_cost_pkr": 340.0799,
-            "portfolio_weight_pct": 10.99,
-            "shares": 384.0
-          },
-          "price_pkr": 345.43,
-          "recommendation_id": "c9ffbcaedb4ea967189b",
-          "recommendation_type": "holding_risk",
-          "risk_reward": null,
-          "score": 0,
-          "score_type": "risk",
-          "sector": null,
-          "source_job": "rules_engine",
-          "stop_method": null,
-          "stop_pkr": null,
-          "target_1_pkr": null,
-          "target_2_pkr": null,
-          "target_pkr": null,
-          "thesis": "holding risk action safe_hold from deterministic risk score",
-          "ticker": "OGDC",
-          "trigger": null
-        },
         {
           "action": "safe_hold",
           "breakdown": {
@@ -3006,6 +2307,705 @@
           "thesis": "defensive utility exposure",
           "ticker": "HUBC",
           "trigger": "risk-off rotation and stable cashflow outlook"
+        },
+        {
+          "action": "trim",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 20,
+            "fundamental_news_risk": 0,
+            "price_risk": 22,
+            "sector_macro_risk": 0,
+            "sell_pressure": 8
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 200.0234,
+            "portfolio_weight_pct": 3.24,
+            "shares": 200.0
+          },
+          "price_pkr": 198.43,
+          "recommendation_id": "285ecc5f44e7ffa9f8c5",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 50,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action trim from deterministic risk score",
+          "ticker": "EFERT",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 0,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 283.6131,
+            "portfolio_weight_pct": 6.12,
+            "shares": 255.0
+          },
+          "price_pkr": 293.83,
+          "recommendation_id": "382d656d91a95e736012",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 0,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "ENGROH",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 10,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 8
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 570.7564,
+            "portfolio_weight_pct": 16.03,
+            "shares": 338.0
+          },
+          "price_pkr": 580.41,
+          "recommendation_id": "54ef589b28ed7d5d8a49",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 18,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "FFC",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 0,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 8
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 235.455,
+            "portfolio_weight_pct": 5.97,
+            "shares": 310.0
+          },
+          "price_pkr": 235.65,
+          "recommendation_id": "efcd4561bf44681c019c",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 8,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "HUBC",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 5,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 468.5826,
+            "portfolio_weight_pct": 9.43,
+            "shares": 236.0
+          },
+          "price_pkr": 488.66,
+          "recommendation_id": "f5bd7cdfd0bd830bc849",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 5,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "LUCK",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 10,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 679.5392,
+            "portfolio_weight_pct": 8.86,
+            "shares": 154.0
+          },
+          "price_pkr": 704.1,
+          "recommendation_id": "b2dcae6a184808fe8b8c",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 10,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "MARI",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 0,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 8
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 515.7073,
+            "portfolio_weight_pct": 10.05,
+            "shares": 217.0
+          },
+          "price_pkr": 566.77,
+          "recommendation_id": "47044092be68097e92ca",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 8,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "MEBL",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 15,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 108.9323,
+            "portfolio_weight_pct": 5.34,
+            "shares": 597.0
+          },
+          "price_pkr": 109.51,
+          "recommendation_id": "d914e65a238b5380749e",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 15,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "MLCF",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 0,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 340.0799,
+            "portfolio_weight_pct": 10.94,
+            "shares": 384.0
+          },
+          "price_pkr": 348.72,
+          "recommendation_id": "5b1d0b9591d2fa5d4d65",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 0,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "OGDC",
+          "trigger": null
+        },
+        {
+          "action": "safe_hold",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 10,
+            "fundamental_news_risk": 0,
+            "price_risk": 0,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 249.9666,
+            "portfolio_weight_pct": 3.3,
+            "shares": 160.0
+          },
+          "price_pkr": 252.66,
+          "recommendation_id": "ef02ce74ea9ec6566430",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 10,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action safe_hold from deterministic risk score",
+          "ticker": "PPL",
+          "trigger": null
+        },
+        {
+          "action": "watch",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 20,
+            "fundamental_news_risk": 0,
+            "price_risk": 10,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 94.2602,
+            "portfolio_weight_pct": 10.72,
+            "shares": 1325.0
+          },
+          "price_pkr": 98.99,
+          "recommendation_id": "fd98fccd1bcd4174da79",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 30,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action watch from deterministic risk score",
+          "ticker": "SEARL",
+          "trigger": null
+        },
+        {
+          "action": "watch",
+          "breakdown": {
+            "concentration_risk": 0,
+            "drawdown_risk": 10,
+            "fundamental_news_risk": 0,
+            "price_risk": 22,
+            "sector_macro_risk": 0,
+            "sell_pressure": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": true,
+            "avg_cost_pkr": 152.16,
+            "portfolio_weight_pct": 9.98,
+            "shares": 817.0
+          },
+          "price_pkr": 149.48,
+          "recommendation_id": "4638a292c80fd347d7a7",
+          "recommendation_type": "holding_risk",
+          "risk_reward": null,
+          "score": 32,
+          "score_type": "risk",
+          "sector": null,
+          "source_job": "rules_engine",
+          "stop_method": null,
+          "stop_pkr": null,
+          "target_1_pkr": null,
+          "target_2_pkr": null,
+          "target_pkr": null,
+          "thesis": "holding risk action watch from deterministic risk score",
+          "ticker": "SYS",
+          "trigger": null
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 15,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 15,
+            "volume_accumulation": 10
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 704.1,
+          "recommendation_id": "c4aa8f9674ce5b8bcf91",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 78,
+          "score_type": "opportunity",
+          "sector": "e&p",
+          "source_job": "rules_engine",
+          "stop_method": "atr14",
+          "stop_pkr": 682.11,
+          "target_1_pkr": 737.09,
+          "target_2_pkr": 759.08,
+          "target_pkr": 737.09,
+          "thesis": "energy cashflow + defensive macro hedge",
+          "ticker": "MARI",
+          "trigger": "oil-supported strength + no breakdown in broader market"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 6,
+            "momentum": 15,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 15,
+            "volume_accumulation": 0
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 580.41,
+          "recommendation_id": "79a4f14d771ca91d0bc3",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 71,
+          "score_type": "opportunity",
+          "sector": "fertilizer",
+          "source_job": "rules_engine",
+          "stop_method": "atr14",
+          "stop_pkr": 560.04,
+          "target_1_pkr": 610.96,
+          "target_2_pkr": 631.32,
+          "target_pkr": 610.96,
+          "thesis": "defensive dividend profile",
+          "ticker": "FFC",
+          "trigger": "rotation to defensive + acceptable valuation"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 15,
+            "quality_fundamentals": 10,
+            "sector_rotation": 10,
+            "valuation": 15,
+            "volume_accumulation": 15
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 98.37,
+          "recommendation_id": "9e287b02a596b8c4c1ca",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 68,
+          "score_type": "opportunity",
+          "sector": "steel",
+          "source_job": "rules_engine",
+          "stop_method": "atr14",
+          "stop_pkr": 89.23,
+          "target_1_pkr": 112.08,
+          "target_2_pkr": 121.22,
+          "target_pkr": 112.08,
+          "thesis": "high-beta industrial exposure",
+          "ticker": "ISL",
+          "trigger": "sustained steel sector inflow"
+        },
+        {
+          "action": "watch_small_add",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 20,
+            "quality_fundamentals": 20,
+            "sector_rotation": 15,
+            "valuation": 5,
+            "volume_accumulation": 5
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 348.72,
+          "recommendation_id": "c42644e7cafe916975df",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 68,
+          "score_type": "opportunity",
+          "sector": "e&p",
+          "source_job": "rules_engine",
+          "stop_method": "atr14",
+          "stop_pkr": 337.1,
+          "target_1_pkr": 366.16,
+          "target_2_pkr": 377.78,
+          "target_pkr": 366.16,
+          "thesis": "large-cap energy beta",
+          "ticker": "OGDC",
+          "trigger": "sector inflow confirmation and improving momentum"
+        },
+        {
+          "action": "watch_only",
+          "breakdown": {
+            "catalyst_insider": 3,
+            "momentum": 15,
+            "quality_fundamentals": 10,
+            "sector_rotation": 10,
+            "valuation": 15,
+            "volume_accumulation": 5
+          },
+          "generated_at": "2026-07-07T03:01:20.008209+00:00",
+          "generated_at_pkt": "2026-07-07 08:01 PKT",
+          "market_regime": "neutral",
+          "market_regime_score": 50,
+          "outcome_windows": {
+            "d30": null,
+            "d7": null,
+            "d90": null
+          },
+          "portfolio_context": {
+            "active_holding": false
+          },
+          "price_pkr": 109.51,
+          "recommendation_id": "7f5bf069030b0316c49c",
+          "recommendation_type": "opportunity",
+          "risk_reward": "1:1.5 / 1:2.5",
+          "score": 58,
+          "score_type": "opportunity",
+          "sector": "cement",
+          "source_job": "rules_engine",
+          "stop_method": "atr14",
+          "stop_pkr": 104.06,
+          "target_1_pkr": 117.69,
+          "target_2_pkr": 123.14,
+          "target_pkr": 117.69,
+          "thesis": "beta to construction cycle",
+          "ticker": "MLCF",
+          "trigger": "breakout with volume and improving index breadth"
         }
       ]
     },
